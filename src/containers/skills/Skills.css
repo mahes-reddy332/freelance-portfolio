@@ -1,85 +1,142 @@
-.skills-main-div {
+/* Technical Arsenal Skills Styles (Inspired by abdallaahmed.icu) */
+
+.skills-arsenal-section {
+  position: relative;
+  padding: 6rem 1.5rem;
+}
+
+.skills-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  width: 100%;
+}
+
+.skills-matrix-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 2rem;
+}
+
+@media (min-width: 768px) {
+  .skills-matrix-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+.skill-domain-card {
+  border-radius: 1.5rem;
+  border-width: 1px;
+  border-style: solid;
+  padding: 2.25rem;
   display: flex;
-  overflow: hidden;
+  flex-direction: column;
+  transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+  backdrop-filter: blur(12px);
 }
 
-.skills-header {
-  font-size: 60px;
-  line-height: normal;
-  font-family: "Google Sans Regular";
-  text-align: center;
+.skill-domain-card:hover {
+  transform: translateY(-5px);
+  border-color: rgba(99, 102, 241, 0.45) !important;
 }
 
-.skills-text {
-  font-size: 20px;
+.domain-card-header {
+  display: flex;
+  align-items: flex-start;
+  gap: 1.15rem;
+  margin-bottom: 1.5rem;
 }
 
-.skills-text-div {
-  margin-left: 50px;
-  font-family: "Google Sans Regular";
+.domain-icon-box {
+  width: 3rem;
+  height: 3rem;
+  border-radius: 0.85rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.35rem;
+  flex-shrink: 0;
 }
 
-.skills-main-div > * {
-  flex: 1;
-  margin-bottom: 30px;
+.domain-title {
+  font-family: "Space Grotesk", sans-serif;
+  font-size: 1.3rem;
+  font-weight: 700;
+  line-height: 1.25;
+  margin: 0 0 0.35rem 0;
 }
 
-.skills-image-div > * {
-  max-width: 100%;
-  height: auto;
-  margin-top: 100px;
+.domain-summary {
+  font-family: "Inter", sans-serif;
+  font-size: 0.85rem;
+  line-height: 1.45;
+  margin: 0;
 }
 
-.skills-heading {
-  font-size: 56px;
-  font-weight: 400;
-  font-family: "Google Sans Regular";
-  line-height: normal;
+/* Tool Pills */
+.domain-tools-wrap {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.45rem;
+  margin-bottom: 1.75rem;
 }
 
-/* Media Query */
-@media (max-width: 1380px) {
-  .skills-heading {
-    font-size: 40px;
-  }
-  .skills-header {
-    font-size: 50px;
-  }
-  /* .skills-image-div > img {
-    margin-top: 0px;
-  } */
+.tool-badge-pill {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  padding: 0.35rem 0.7rem;
+  border-radius: 9999px;
+  border-width: 1px;
+  border-style: solid;
+  font-family: "Inter", sans-serif;
+  transition: all 0.2s ease;
 }
-@media (max-width: 768px) {
-  .skills-heading {
-    font-size: 30px;
-    text-align: center;
-  }
-  .skills-header {
-    font-size: 30px;
-  }
-  .greeting-text-p {
-    font-size: 16px;
-    line-height: normal;
-  }
-  .skills-main-div {
-    flex-direction: column;
-  }
-  .skills-text-div {
-    margin-left: 0px;
-    margin: 20px;
-  }
-  .skills-text {
-    font-size: 16px;
-  }
-  .skills-text-subtitle {
-    font-size: 16px;
-    text-align: center;
-  }
-  .skills-image-div {
-    /* display: none; */
-    order: 2;
-  }
-  .skills-image-div > * {
-    margin-top: 0px;
-  }
+
+.tool-badge-pill:hover {
+  border-color: rgba(99, 102, 241, 0.5) !important;
+  transform: translateY(-1px);
+}
+
+.tool-name {
+  font-size: 0.8rem;
+  font-weight: 600;
+}
+
+.tool-tag {
+  font-family: "JetBrains Mono", monospace;
+  font-size: 0.675rem;
+  font-weight: 600;
+  opacity: 0.85;
+}
+
+/* Highlights */
+.domain-highlights-box {
+  margin-top: auto;
+  padding-top: 1.25rem;
+  border-top-width: 1px;
+  border-top-style: solid;
+}
+
+.domain-highlights-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 0.55rem;
+}
+
+.domain-highlight-item {
+  display: flex;
+  align-items: flex-start;
+  gap: 0.6rem;
+  font-family: "Inter", sans-serif;
+  font-size: 0.85rem;
+  line-height: 1.5;
+}
+
+.domain-highlight-item i {
+  font-size: 0.75rem;
+  margin-top: 0.25rem;
+  flex-shrink: 0;
 }

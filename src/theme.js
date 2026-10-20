@@ -195,4 +195,59 @@ export const materialTealTheme = {
   splashBg: "#05505E",
 };
 
-export const chosenTheme = blueTheme;
+// Premium modern themes inspired by abdallaahmed.icu
+export const modernDarkTheme = {
+  name: "dark",
+  body: "#090d16",
+  surface: "#111726",
+  surfaceHover: "#161f33",
+  surfaceSoft: "rgba(255, 255, 255, 0.03)",
+  border: "rgba(255, 255, 255, 0.08)",
+  borderStrong: "rgba(255, 255, 255, 0.16)",
+  borderFocus: "#6366f1",
+  text: "#f8fafc",
+  secondaryText: "#94a3b8",
+  mutedText: "#64748b",
+  primary: "#6366f1",
+  primaryGlow: "rgba(99, 102, 241, 0.35)",
+  primaryForeground: "#ffffff",
+  accent: "#38bdf8",
+  emerald: "#10b981",
+  highlight: "rgba(99, 102, 241, 0.15)",
+  imageHighlight: "#6366f1",
+  compImgHighlight: "#1e293b",
+  headerColor: "rgba(9, 13, 22, 0.85)",
+  splashBg: "#090d16",
+  jacketColor: "#6366f1",
+  expTxtColor: "#ffffff",
+  dark: "#05070c",
+};
+
+export const modernLightTheme = {
+  name: "light",
+  body: "#f8fafc",
+  surface: "#ffffff",
+  surfaceHover: "#f1f5f9",
+  surfaceSoft: "rgba(0, 0, 0, 0.02)",
+  border: "#e2e8f0",
+  borderStrong: "#cbd5e1",
+  borderFocus: "#4f46e5",
+  text: "#0f172a",
+  secondaryText: "#475569",
+  mutedText: "#64748b",
+  primary: "#4f46e5",
+  primaryGlow: "rgba(79, 70, 229, 0.25)",
+  primaryForeground: "#ffffff",
+  accent: "#0284c7",
+  emerald: "#059669",
+  highlight: "rgba(79, 70, 229, 0.08)",
+  imageHighlight: "#4f46e5",
+  compImgHighlight: "#f1f5f9",
+  headerColor: "rgba(248, 250, 252, 0.85)",
+  splashBg: "#f8fafc",
+  jacketColor: "#4f46e5",
+  expTxtColor: "#0f172a",
+  dark: "#0f172a",
+};
+
+export const chosenTheme = modernDarkTheme;

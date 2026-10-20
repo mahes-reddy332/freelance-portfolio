@@ -1,0 +1,244 @@
+/* Freelance Services Styles (Inspired by abdallaahmed.icu) */
+
+.services-section {
+  position: relative;
+  padding: 6rem 1.5rem;
+  overflow: hidden;
+}
+
+.services-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  width: 100%;
+}
+
+.section-eyebrow-wrap {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  margin-bottom: 0.75rem;
+}
+
+.section-index-badge {
+  font-family: "JetBrains Mono", monospace;
+  font-size: 0.8rem;
+  font-weight: 600;
+  color: #6366f1;
+  padding: 0.2rem 0.5rem;
+  border-radius: 4px;
+  background-color: rgba(99, 102, 241, 0.1);
+  letter-spacing: 0.05em;
+}
+
+.section-eyebrow {
+  font-family: "Inter", sans-serif;
+  font-size: 0.825rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+}
+
+.section-header-split {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  margin-bottom: 3.5rem;
+}
+
+@media (min-width: 768px) {
+  .section-header-split {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-end;
+  }
+}
+
+.section-heading {
+  font-family: "Space Grotesk", sans-serif;
+  font-size: 2.25rem;
+  font-weight: 800;
+  letter-spacing: -0.02em;
+  margin: 0;
+  line-height: 1.15;
+}
+
+@media (min-width: 768px) {
+  .section-heading {
+    font-size: 2.75rem;
+    max-width: 32rem;
+  }
+}
+
+.section-subheading {
+  font-family: "Inter", sans-serif;
+  font-size: 1.05rem;
+  line-height: 1.6;
+  margin: 0;
+  max-width: 32rem;
+}
+
+/* Grid */
+.services-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 2rem;
+}
+
+@media (min-width: 768px) {
+  .services-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+/* Service Card */
+.service-card {
+  border-radius: 1.5rem;
+  border-width: 1px;
+  border-style: solid;
+  padding: 2.25rem;
+  display: flex;
+  flex-direction: column;
+  transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+  backdrop-filter: blur(12px);
+}
+
+.service-card:hover {
+  transform: translateY(-5px);
+  border-color: rgba(99, 102, 241, 0.4) !important;
+}
+
+.service-card-top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 1.5rem;
+}
+
+.service-icon-box {
+  width: 3.25rem;
+  height: 3.25rem;
+  border-radius: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.35rem;
+}
+
+.service-num-tag {
+  font-family: "Space Grotesk", sans-serif;
+  font-size: 1.5rem;
+  font-weight: 800;
+  opacity: 0.4;
+}
+
+.service-title {
+  font-family: "Space Grotesk", sans-serif;
+  font-size: 1.45rem;
+  font-weight: 700;
+  margin: 0 0 0.5rem 0;
+  line-height: 1.25;
+}
+
+.service-tagline {
+  font-family: "Inter", sans-serif;
+  font-size: 0.9rem;
+  font-weight: 600;
+  margin: 0 0 1rem 0;
+}
+
+.service-desc {
+  font-family: "Inter", sans-serif;
+  font-size: 0.925rem;
+  line-height: 1.65;
+  margin: 0 0 1.5rem 0;
+}
+
+/* Deliverables */
+.service-deliverables {
+  border-top-width: 1px;
+  border-top-style: solid;
+  border-bottom-width: 1px;
+  border-bottom-style: solid;
+  padding: 1.25rem 0;
+  margin-bottom: 1.5rem;
+}
+
+.deliverables-title {
+  font-family: "Inter", sans-serif;
+  font-size: 0.8rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  margin-bottom: 0.75rem;
+}
+
+.deliverables-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.deliverable-item {
+  display: flex;
+  align-items: flex-start;
+  gap: 0.6rem;
+  font-family: "Inter", sans-serif;
+  font-size: 0.85rem;
+  line-height: 1.45;
+}
+
+.deliverable-check {
+  font-size: 0.8rem;
+  margin-top: 0.2rem;
+  flex-shrink: 0;
+}
+
+/* Tech Pills */
+.service-tech-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.45rem;
+  margin-bottom: 1.75rem;
+}
+
+.service-tech-pill {
+  font-family: "JetBrains Mono", monospace;
+  font-size: 0.75rem;
+  font-weight: 500;
+  padding: 0.3rem 0.65rem;
+  border-radius: 9999px;
+  border-width: 1px;
+  border-style: solid;
+}
+
+/* Footer / Action */
+.service-card-footer {
+  margin-top: auto;
+}
+
+.service-inquire-btn {
+  width: 100%;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  padding: 0.75rem 1.25rem;
+  border-radius: 9999px;
+  border-width: 1px;
+  border-style: solid;
+  background-color: transparent;
+  font-family: "Inter", sans-serif;
+  font-size: 0.85rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  outline: none;
+}
+
+.service-inquire-btn:hover {
+  background-color: rgba(99, 102, 241, 0.1);
+  transform: translateY(-1px);
+}

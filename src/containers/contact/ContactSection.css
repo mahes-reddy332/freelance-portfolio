@@ -1,0 +1,305 @@
+/* Contact & Inquiry Section Styles (Inspired by abdallaahmed.icu) */
+
+.contact-inquiry-section {
+  position: relative;
+  padding: 6rem 1.5rem;
+}
+
+.contact-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  width: 100%;
+}
+
+.sla-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.5rem 1rem;
+  border-radius: 9999px;
+  border-width: 1px;
+  border-style: solid;
+  font-family: "Inter", sans-serif;
+  font-size: 0.825rem;
+  white-space: nowrap;
+}
+
+.contact-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 2.5rem;
+}
+
+@media (min-width: 1024px) {
+  .contact-grid {
+    grid-template-columns: 1.25fr 0.85fr;
+  }
+}
+
+/* Inquiry Form Card */
+.inquiry-form-card {
+  border-radius: 1.5rem;
+  border-width: 1px;
+  border-style: solid;
+  padding: 2.5rem;
+  backdrop-filter: blur(12px);
+}
+
+.form-card-title {
+  font-family: "Space Grotesk", sans-serif;
+  font-size: 1.5rem;
+  font-weight: 700;
+  margin: 0 0 0.5rem 0;
+}
+
+.form-card-sub {
+  font-family: "Inter", sans-serif;
+  font-size: 0.9rem;
+  line-height: 1.5;
+  margin: 0 0 1.75rem 0;
+}
+
+.form-feedback-alert {
+  display: flex;
+  align-items: center;
+  gap: 0.65rem;
+  padding: 0.85rem 1.15rem;
+  border-radius: 0.75rem;
+  border-width: 1px;
+  border-style: solid;
+  font-family: "Inter", sans-serif;
+  font-size: 0.875rem;
+  margin-bottom: 1.5rem;
+}
+
+.inquiry-form {
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+}
+
+.form-row {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1.25rem;
+}
+
+@media (min-width: 640px) {
+  .form-row {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.form-group label {
+  font-family: "Inter", sans-serif;
+  font-size: 0.825rem;
+  font-weight: 600;
+  letter-spacing: 0.01em;
+}
+
+.form-group input,
+.form-group select,
+.form-group textarea {
+  width: 100%;
+  padding: 0.75rem 1rem;
+  border-radius: 0.75rem;
+  border-width: 1px;
+  border-style: solid;
+  font-family: "Inter", sans-serif;
+  font-size: 0.9rem;
+  outline: none;
+  transition: all 0.2s ease;
+  box-sizing: border-box;
+}
+
+.form-group input:focus,
+.form-group select:focus,
+.form-group textarea:focus {
+  border-color: #6366f1 !important;
+  box-shadow: 0 0 0 3px rgba(99, 102, 241, 0.2);
+}
+
+.form-submit-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.6rem;
+  padding: 0.85rem 1.75rem;
+  border-radius: 9999px;
+  border: none;
+  font-family: "Inter", sans-serif;
+  font-size: 0.95rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.25s ease;
+  margin-top: 0.5rem;
+}
+
+.form-submit-btn:hover {
+  transform: translateY(-2px);
+  filter: brightness(1.1);
+}
+
+/* Direct Channels */
+.direct-channels-wrap {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.channels-card {
+  border-radius: 1.5rem;
+  border-width: 1px;
+  border-style: solid;
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  backdrop-filter: blur(12px);
+}
+
+.channels-card-title {
+  font-family: "Space Grotesk", sans-serif;
+  font-size: 1.25rem;
+  font-weight: 700;
+  margin: 0 0 0.5rem 0;
+}
+
+.direct-channel-item {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  padding: 0.9rem 1.15rem;
+  border-radius: 1rem;
+  border-width: 1px;
+  border-style: solid;
+  transition: all 0.2s ease;
+}
+
+.direct-channel-item.link-item {
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.direct-channel-item.link-item:hover {
+  border-color: rgba(99, 102, 241, 0.45) !important;
+  transform: translateY(-2px);
+}
+
+.channel-icon {
+  width: 2.5rem;
+  height: 2.5rem;
+  border-radius: 0.65rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.15rem;
+  flex-shrink: 0;
+}
+
+.channel-info {
+  display: flex;
+  flex-direction: column;
+  gap: 0.15rem;
+  flex: 1;
+  min-width: 0;
+}
+
+.channel-label {
+  font-family: "Inter", sans-serif;
+  font-size: 0.725rem;
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+.channel-value {
+  font-family: "Space Grotesk", sans-serif;
+  font-size: 0.9rem;
+  font-weight: 600;
+  text-decoration: none;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.copy-btn {
+  width: 2rem;
+  height: 2rem;
+  border-radius: 0.5rem;
+  border-width: 1px;
+  border-style: solid;
+  background-color: transparent;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  font-size: 0.85rem;
+}
+
+.copy-btn:hover {
+  border-color: #6366f1 !important;
+  color: #6366f1 !important;
+}
+
+.channel-ext-icon {
+  font-size: 0.85rem;
+  opacity: 0.7;
+}
+
+/* Schedule Card */
+.schedule-call-card {
+  border-radius: 1.5rem;
+  border-width: 1px;
+  border-style: solid;
+  padding: 1.75rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+}
+
+.schedule-header {
+  display: flex;
+  align-items: flex-start;
+  gap: 0.85rem;
+}
+
+.schedule-title {
+  font-family: "Space Grotesk", sans-serif;
+  font-size: 1.05rem;
+  font-weight: 700;
+  margin: 0 0 0.25rem 0;
+}
+
+.schedule-sub {
+  font-family: "Inter", sans-serif;
+  font-size: 0.825rem;
+  line-height: 1.45;
+  margin: 0;
+}
+
+.schedule-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  padding: 0.75rem 1.25rem;
+  border-radius: 9999px;
+  font-family: "Inter", sans-serif;
+  font-size: 0.875rem;
+  font-weight: 600;
+  text-decoration: none;
+  transition: all 0.25s ease;
+}
+
+.schedule-btn:hover {
+  transform: translateY(-2px);
+  filter: brightness(1.1);
+}
