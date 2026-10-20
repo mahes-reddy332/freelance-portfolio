@@ -9,7 +9,7 @@ export default function ContactSection(props) {
   const [formData, setFormData] = useState({
     name: "",
     email: "",
-    service: "Generative AI & Enterprise RAG",
+    service: "Generative AI, RAG & Chatbots",
     budget: "$2,000 – $5,000",
     message: "",
   });
@@ -175,17 +175,17 @@ export default function ContactSection(props) {
                         color: theme.text,
                       }}
                     >
-                      <option value="Generative AI & Enterprise RAG">
-                        Generative AI &amp; Enterprise RAG
+                      <option value="Generative AI, RAG & Chatbots">
+                        Generative AI, RAG &amp; Chatbots
                       </option>
-                      <option value="Autonomous Agents & MCP Automation">
-                        Autonomous Agents &amp; MCP Automation
+                      <option value="AI Agents & Automation">
+                        AI Agents &amp; Automation
                       </option>
-                      <option value="Machine Learning & Predictive Modeling">
-                        Machine Learning &amp; Predictive Modeling
+                      <option value="Machine Learning & Deep Learning">
+                        Machine Learning &amp; Deep Learning
                       </option>
-                      <option value="Full-Stack AI Integration & High-Throughput APIs">
-                        Full-Stack AI Integration &amp; APIs
+                      <option value="Full-Stack AI Application Development">
+                        Full-Stack AI Application Development
                       </option>
                       <option value="Technical Consulting & Architecture Review">
                         Technical Consulting &amp; Architecture Review

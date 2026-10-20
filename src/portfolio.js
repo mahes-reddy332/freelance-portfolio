@@ -65,62 +65,121 @@ const freelanceServices = [
   {
     id: "genai-rag",
     number: "01",
-    title: "Generative AI & Enterprise RAG",
-    tagline: "Custom LLM solutions grounded in your company's proprietary data",
-    description: "Design and implement production-grade Retrieval-Augmented Generation (RAG) architectures with hybrid dense/sparse search, ChromaDB/FAISS vector databases, semantic reranking, context compression, and automated fact-checking guardrails to eliminate hallucinations.",
-    deliverables: [
-      "Domain-specific RAG pipelines with ChromaDB/FAISS",
-      "Semantic search & automated citation verification",
-      "Real-time Server-Sent Events (SSE) streaming chat interfaces",
-      "Guardrails, prompt evaluation & LangSmith observability",
-    ],
-    technologies: ["LangChain", "ChromaDB", "FAISS", "OpenAI / Claude", "FastAPI", "Next.js"],
-    icon: "fa-solid fa-brain",
+    title: "Generative AI, RAG & Chatbots",
+    description:
+      "Build intelligent chatbots and AI assistants that answer questions using documents, knowledge bases, and custom data. Develop retrieval pipelines with semantic search, source citations, conversation history, and LLM integrations to deliver relevant, context-aware responses.",
+    icon: "fa-solid fa-comments",
   },
   {
     id: "agentic-automation",
     number: "02",
-    title: "Autonomous Agents & MCP Automation",
-    tagline: "Multi-agent collaborative workflows and Model Context Protocol servers",
-    description: "Build robust autonomous agents powered by LangGraph that plan, execute tool calls, coordinate specialized sub-agents, and integrate Human-in-the-Loop (HITL) approval gates. Deploy FastMCP servers for desktop and cloud AI assistants.",
-    deliverables: [
-      "Stateful multi-agent DAG workflows using LangGraph",
-      "FastMCP tool servers with remote HTTP/SSE deployment",
-      "Autonomous multi-step research, writing & validation pipelines",
-      "Human-in-the-loop review checkpoints & persistent memory",
-    ],
-    technologies: ["LangGraph", "FastMCP", "Model Context Protocol", "Python", "SQLite", "Claude Desktop"],
+    title: "AI Agents & Automation",
+    description:
+      "Develop AI agents that use tools, APIs, memory, and multi-step workflows to automate research, data processing, and business tasks. Implement agent orchestration and human approval checkpoints where necessary.",
     icon: "fa-solid fa-robot",
   },
   {
-    id: "ml-predictive",
+    id: "ml-deeplearning",
     number: "03",
-    title: "Machine Learning & Predictive Modeling",
-    tagline: "Data-driven statistical models and deep neural networks",
-    description: "End-to-end predictive modeling from exploratory data analysis and feature engineering to model training, hyperparameter tuning, and deployment. Expertise in ensemble forecasting (XGBoost, LightGBM) and deep learning with PyTorch.",
-    deliverables: [
-      "Custom regression, classification & forecasting models",
-      "Tabular feature engineering & automated data pipelines",
-      "Computer vision SEM image segmentation (OpenCV)",
-      "Bayesian optimization with Gaussian Process surrogates",
-    ],
-    technologies: ["PyTorch", "Scikit-learn", "XGBoost", "LightGBM", "OpenCV", "SciPy"],
+    title: "Machine Learning & Deep Learning",
+    description:
+      "Build classification, regression, forecasting, and computer vision models using structured data, images, and text. Handle data preparation, feature engineering, model training, hyperparameter tuning, and evaluation.",
     icon: "fa-solid fa-chart-line",
   },
   {
-    id: "fullstack-cloud",
+    id: "fullstack-ai",
     number: "04",
-    title: "Full-Stack AI Integration & High-Throughput APIs",
-    tagline: "Bridging intelligent models with fast, reactive web frontends",
-    description: "Deliver complete, end-to-end AI applications. High-performance asynchronous FastAPI backends with WebSocket/SSE streaming connected to modern React 19/Next.js interfaces, Docker containerization, and GCP cloud hosting.",
-    deliverables: [
-      "Asynchronous FastAPI REST & Streaming APIs",
-      "Interactive React & Next.js user interfaces",
-      "Dockerized containerization & GCP cloud deployment",
-      "Relational database modeling with PostgreSQL & SQLite",
+    title: "Full-Stack AI Application Development",
+    description:
+      "Turn AI models and LLM workflows into complete applications with modern frontends, API backends, database integration, streaming responses, and cloud deployment.",
+    icon: "fa-solid fa-layer-group",
+  },
+];
+
+const techStack = [
+  {
+    id: "genai-nlp",
+    category: "LLMs, Generative AI & NLP",
+    icon: "fa-solid fa-brain",
+    description:
+      "Build LLM applications, chatbots, retrieval systems, and language-processing pipelines.",
+    technologies: [
+      "LangChain",
+      "LangGraph",
+      "Hugging Face Transformers",
+      "Retrieval-Augmented Generation (RAG)",
+      "Prompt Engineering",
+      "OpenAI APIs",
+      "LoRA / PEFT",
+      "ChromaDB",
+      "FAISS",
+      "LangSmith",
     ],
-    technologies: ["FastAPI", "React", "TypeScript", "Docker", "PostgreSQL", "Google Cloud"],
-    icon: "fa-solid fa-cubes",
+  },
+  {
+    id: "ml-cv",
+    category: "Machine Learning, Deep Learning & Computer Vision",
+    icon: "fa-solid fa-microchip",
+    description:
+      "Train and evaluate predictive models, neural networks, and image-processing systems.",
+    technologies: [
+      "Scikit-learn",
+      "PyTorch",
+      "TensorFlow / Keras",
+      "XGBoost",
+      "LightGBM",
+      "Convolutional Neural Networks (CNNs)",
+      "OpenCV",
+      "SciPy",
+    ],
+  },
+  {
+    id: "data-eng",
+    category: "Data Engineering & Processing",
+    icon: "fa-solid fa-database",
+    description:
+      "Prepare datasets, engineer features, process data, and build reliable analytical pipelines.",
+    technologies: [
+      "Python",
+      "Pandas",
+      "NumPy",
+      "SQL",
+      "Data Preprocessing",
+      "Feature Engineering",
+      "Model Evaluation",
+    ],
+  },
+  {
+    id: "agents-backend",
+    category: "AI Agents, Backend & Cloud",
+    icon: "fa-solid fa-server",
+    description:
+      "Orchestrate tool-using agents, expose AI capabilities through APIs, and deploy applications.",
+    technologies: [
+      "Model Context Protocol (MCP)",
+      "FastMCP",
+      "FastAPI",
+      "REST APIs",
+      "Server-Sent Events (SSE)",
+      "WebSockets",
+      "Docker",
+      "Google Cloud",
+    ],
+  },
+  {
+    id: "frontend-db",
+    category: "Frontend & Databases",
+    icon: "fa-solid fa-window-restore",
+    description:
+      "Build interactive AI interfaces and connect applications to persistent data storage.",
+    technologies: [
+      "React",
+      "Next.js",
+      "TypeScript",
+      "PostgreSQL",
+      "MySQL",
+      "SQLite",
+    ],
   },
 ];
 
@@ -613,4 +672,5 @@ export {
   publicationsHeader,
   publications,
   contactPageData,
+  techStack,
 };

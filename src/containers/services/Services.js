@@ -25,15 +25,15 @@ export default function Services(props) {
           <div className="section-eyebrow-wrap">
             <span className="section-index-badge">01 / 04</span>
             <span className="section-eyebrow" style={{ color: theme.primary }}>
-              Freelance Services
+              Services
             </span>
           </div>
           <div className="section-header-split">
             <h2 className="section-heading" style={{ color: theme.text }}>
-              Specialized AI &amp; Engineering Services
+              AI Engineering Services
             </h2>
             <p className="section-subheading" style={{ color: theme.secondaryText }}>
-              I partner with founders, engineering teams, and enterprises to design, prototype, and ship high-impact AI capabilities with production reliability.
+              AI solutions I can design, develop, and integrate for your business.
             </p>
           </div>
         </Fade>
@@ -41,7 +41,7 @@ export default function Services(props) {
         {/* Services Card Grid */}
         <div className="services-grid">
           {freelanceServices.map((service, index) => (
-            <Fade bottom duration={900} delay={index * 100} distance="25px" key={service.id}>
+            <Fade bottom duration={800} delay={index * 80} distance="20px" key={service.id}>
               <div
                 className="service-card"
                 style={{
@@ -49,87 +49,46 @@ export default function Services(props) {
                   borderColor: theme.border,
                   boxShadow:
                     theme.name === "dark"
-                      ? "0 20px 40px -15px rgba(0, 0, 0, 0.4)"
-                      : "0 20px 40px -15px rgba(15, 23, 42, 0.05)",
+                      ? "0 15px 35px -10px rgba(0, 0, 0, 0.45)"
+                      : "0 15px 35px -10px rgba(15, 23, 42, 0.05)",
                 }}
               >
-                {/* Card Top */}
-                <div className="service-card-top">
-                  <span
-                    className="service-icon-box"
-                    style={{
-                      backgroundColor: theme.highlight,
-                      color: theme.primary,
-                    }}
-                  >
-                    <i className={service.icon}></i>
-                  </span>
-                  <span className="service-num-tag" style={{ color: theme.secondaryText }}>
-                    {service.number}
-                  </span>
-                </div>
-
-                {/* Card Header */}
-                <h3 className="service-title" style={{ color: theme.text }}>
-                  {service.title}
-                </h3>
-                <p className="service-tagline" style={{ color: theme.primary }}>
-                  {service.tagline}
-                </p>
-                <p className="service-desc" style={{ color: theme.secondaryText }}>
-                  {service.description}
-                </p>
-
-                {/* Deliverables Checklist */}
-                <div
-                  className="service-deliverables"
-                  style={{
-                    borderTopColor: theme.border,
-                    borderBottomColor: theme.border,
-                  }}
-                >
-                  <div className="deliverables-title" style={{ color: theme.text }}>
-                    Key Deliverables:
-                  </div>
-                  <ul className="deliverables-list">
-                    {service.deliverables.map((item, dIdx) => (
-                      <li key={dIdx} className="deliverable-item">
-                        <i className="fa-solid fa-check deliverable-check" style={{ color: theme.emerald }}></i>
-                        <span style={{ color: theme.secondaryText }}>{item}</span>
-                      </li>
-                    ))}
-                  </ul>
-                </div>
-
-                {/* Tech Badges */}
-                <div className="service-tech-tags">
-                  {service.technologies.map((tech, tIdx) => (
+                <div className="service-card-body">
+                  <div className="service-card-top">
                     <span
-                      key={tIdx}
-                      className="service-tech-pill"
+                      className="service-icon-box"
                       style={{
-                        backgroundColor: theme.name === "dark" ? "rgba(255, 255, 255, 0.05)" : "rgba(15, 23, 42, 0.04)",
-                        color: theme.text,
-                        borderColor: theme.border,
+                        backgroundColor: theme.highlight,
+                        color: theme.primary,
                       }}
                     >
-                      {tech}
+                      <i className={service.icon}></i>
                     </span>
-                  ))}
+                    <span className="service-num-tag" style={{ color: theme.secondaryText }}>
+                      {service.number}
+                    </span>
+                  </div>
+
+                  <h3 className="service-title" style={{ color: theme.text }}>
+                    {service.title}
+                  </h3>
+
+                  <p className="service-desc" style={{ color: theme.secondaryText }}>
+                    {service.description}
+                  </p>
                 </div>
 
-                {/* Card Action */}
                 <div className="service-card-footer">
                   <button
                     type="button"
                     onClick={() => handleInquire(service.title)}
-                    className="service-inquire-btn"
+                    className="service-cta-btn"
                     style={{
                       color: theme.primary,
                       borderColor: theme.borderStrong || theme.border,
                     }}
                   >
-                    <span>Inquire About This Service</span>
+                    <span>Discuss a Project</span>
                     <i className="fa-solid fa-arrow-right"></i>
                   </button>
                 </div>

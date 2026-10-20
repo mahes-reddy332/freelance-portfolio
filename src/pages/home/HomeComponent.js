@@ -64,10 +64,10 @@ class Home extends Component {
           </div>
         )}
 
-        {/* 3. Freelance Services */}
+        {/* 3. AI Engineering Services */}
         <Services theme={theme} />
 
-        {/* 4. Technologies & Frameworks */}
+        {/* 4. Tech Stack & Expertise */}
         <Skills theme={theme} />
 
         {/* 5. Client Delivery Process */}
