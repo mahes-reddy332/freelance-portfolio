@@ -23,7 +23,7 @@ export default function Services(props) {
         {/* Section Header */}
         <Fade bottom duration={800} distance="20px">
           <div className="section-eyebrow-wrap">
-            <span className="section-index-badge">01 / 06</span>
+            <span className="section-index-badge">01 / 04</span>
             <span className="section-eyebrow" style={{ color: theme.primary }}>
               Freelance Services
             </span>

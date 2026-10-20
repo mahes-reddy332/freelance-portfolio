@@ -47,7 +47,7 @@ export default function ContactSection(props) {
         {/* Header */}
         <Fade bottom duration={800} distance="20px">
           <div className="section-eyebrow-wrap">
-            <span className="section-index-badge">06 / 06</span>
+            <span className="section-index-badge">04 / 04</span>
             <span className="section-eyebrow" style={{ color: theme.primary }}>
               Initiate Project
             </span>

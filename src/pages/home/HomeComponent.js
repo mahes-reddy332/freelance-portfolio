@@ -5,18 +5,11 @@ import Skills from "../../containers/skills/Skills";
 import Services from "../../containers/services/Services";
 import Process from "../../containers/process/Process";
 import FeaturedProjectCard from "../../components/featuredProjectCard/FeaturedProjectCard";
-import ExperienceAccordion from "../../containers/experienceAccordion/ExperienceAccordion";
-import Educations from "../../containers/education/Educations";
-import Certifications from "../../containers/certifications/Certifications";
 import ContactSection from "../../containers/contact/ContactSection";
 import Button from "../../components/button/Button";
 import Footer from "../../components/footer/Footer";
 import TopButton from "../../components/topButton/TopButton";
 import ProjectsData from "../../shared/opensource/projects.json";
-import {
-  experience,
-  certifications,
-} from "../../portfolio.js";
 import { Fade } from "react-reveal";
 import "./HomeComponent.css";
 
@@ -29,12 +22,8 @@ class Home extends Component {
       <div className="portfolio-homepage">
         <Header theme={theme} toggleTheme={toggleTheme} themeMode={themeMode} />
 
-        {/* 1. Hero / Introduction */}
+        {/* 1. Hero and Introduction */}
         <Greeting theme={theme} />
-        <Skills theme={theme} />
-
-        {/* Freelance Services */}
-        <Services theme={theme} />
 
         {/* 2. Selected Projects */}
         {featuredProjects.length > 0 && (
@@ -75,53 +64,16 @@ class Home extends Component {
           </div>
         )}
 
-        {/* Client Delivery Process */}
+        {/* 3. Freelance Services */}
+        <Services theme={theme} />
+
+        {/* 4. Technologies & Frameworks */}
+        <Skills theme={theme} />
+
+        {/* 5. Client Delivery Process */}
         <Process theme={theme} />
 
-        {/* 3. Experience & Research */}
-        <div className="home-section" id="experience">
-          <Fade bottom duration={1000} distance="20px">
-            <div className="home-section-header">
-              <h1
-                className="home-section-title"
-                style={{ color: theme.text }}
-              >
-                Experience & Research
-              </h1>
-              <p
-                className="home-section-subtitle subTitle"
-                style={{ color: theme.secondaryText }}
-              >
-                Hands-on AI/ML engineering, academic research at IIT Madras,
-                and recognized achievements across industry hackathons and case
-                competitions.
-              </p>
-            </div>
-          </Fade>
-          <ExperienceAccordion
-            sections={experience["sections"]}
-            theme={theme}
-          />
-          <div className="home-section-btn-div">
-            <Button
-              text="View Full Experience"
-              href="/experience"
-              theme={theme}
-            />
-          </div>
-        </div>
-
-        {/* 4. Education */}
-        <div className="home-section" id="education">
-          <Educations theme={theme} />
-          {certifications &&
-            certifications.certifications &&
-            certifications.certifications.length > 0 && (
-              <Certifications theme={theme} />
-            )}
-        </div>
-
-        {/* 5. Contact & Client Inquiry */}
+        {/* 6. Contact */}
         <ContactSection theme={theme} />
 
         <Footer theme={theme} />
