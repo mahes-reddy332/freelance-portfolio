@@ -47,10 +47,7 @@ export default function Greeting(props) {
                 {greeting.subTitle}
               </p>
               <SocialMedia theme={theme} />
-              <div
-                className="portfolio-repo-btn-div"
-                style={{ display: "flex", gap: "15px", flexWrap: "wrap", marginTop: "24px" }}
-              >
+              <div className="portfolio-repo-btn-div">
                 <Button
                   text="Start a Project"
                   href="/contact"

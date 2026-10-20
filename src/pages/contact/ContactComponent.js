@@ -45,10 +45,7 @@ class Contact extends Component {
                   {ContactData["description"]}
                 </p>
                 <SocialMedia theme={theme} />
-                <div
-                  className="resume-btn-div"
-                  style={{ display: "flex", gap: "15px", flexWrap: "wrap" }}
-                >
+                <div className="resume-btn-div">
                   <Button
                     text="Email Me"
                     href="mailto:mahesreddymula@gmail.com"

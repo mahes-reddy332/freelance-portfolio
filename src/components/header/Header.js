@@ -16,6 +16,13 @@ const onMouseOut = (event) => {
 };
 
 class Header extends Component {
+  closeMenu = () => {
+    const menuBtn = document.getElementById("menu-btn");
+    if (menuBtn) {
+      menuBtn.checked = false;
+    }
+  };
+
   render() {
     const theme = this.props.theme;
     const { toggleTheme, themeMode } = this.props;
@@ -26,7 +33,7 @@ class Header extends Component {
         <SeoHeader />
         <div>
           <header className="header">
-            <NavLink to={link} tag={Link} className="logo">
+            <NavLink to={link} tag={Link} className="logo" onClick={this.closeMenu}>
               <span style={{ color: theme.text }}> &lt;</span>
               <span className="logo-name" style={{ color: theme.text }}>
                 {greeting.logo_name}
@@ -34,16 +41,23 @@ class Header extends Component {
               <span style={{ color: theme.text }}>/&gt;</span>
             </NavLink>
             <input className="menu-btn" type="checkbox" id="menu-btn" />
-            <label className="menu-icon" htmlFor="menu-btn">
-              <span className="navicon"></span>
+            <label className="menu-icon" htmlFor="menu-btn" aria-label="Toggle navigation menu">
+              <span className="navicon" style={{ backgroundColor: theme.text }}></span>
             </label>
-            <ul className="menu" style={{ backgroundColor: theme.body }}>
+            <ul
+              className="menu"
+              style={{
+                backgroundColor: theme.body,
+                borderColor: theme.border || "rgba(0, 28, 85, 0.12)",
+              }}
+            >
               <li>
                 <NavLink
                   to="/home"
                   tag={Link}
                   activeStyle={{ fontWeight: "bold" }}
                   style={{ color: theme.text }}
+                  onClick={this.closeMenu}
                   onMouseEnter={(event) => onMouseEnter(event, theme.highlight)}
                   onMouseOut={(event) => onMouseOut(event)}
                 >
@@ -56,6 +70,7 @@ class Header extends Component {
                   tag={Link}
                   activeStyle={{ fontWeight: "bold" }}
                   style={{ color: theme.text }}
+                  onClick={this.closeMenu}
                   onMouseEnter={(event) => onMouseEnter(event, theme.highlight)}
                   onMouseOut={(event) => onMouseOut(event)}
                 >
@@ -68,6 +83,7 @@ class Header extends Component {
                   tag={Link}
                   activeStyle={{ fontWeight: "bold" }}
                   style={{ color: theme.text }}
+                  onClick={this.closeMenu}
                   onMouseEnter={(event) => onMouseEnter(event, theme.highlight)}
                   onMouseOut={(event) => onMouseOut(event)}
                 >
@@ -80,6 +96,7 @@ class Header extends Component {
                   tag={Link}
                   activeStyle={{ fontWeight: "bold" }}
                   style={{ color: theme.text }}
+                  onClick={this.closeMenu}
                   onMouseEnter={(event) => onMouseEnter(event, theme.highlight)}
                   onMouseOut={(event) => onMouseOut(event)}
                 >
@@ -92,6 +109,7 @@ class Header extends Component {
                   tag={Link}
                   activeStyle={{ fontWeight: "bold" }}
                   style={{ color: theme.text }}
+                  onClick={this.closeMenu}
                   onMouseEnter={(event) => onMouseEnter(event, theme.highlight)}
                   onMouseOut={(event) => onMouseOut(event)}
                 >
@@ -99,7 +117,10 @@ class Header extends Component {
                 </NavLink>
               </li>
               {toggleTheme && (
-                <li style={{ display: "flex", alignItems: "center", padding: "0 10px" }}>
+                <li
+                  className="theme-toggle-li"
+                  style={{ display: "flex", alignItems: "center", padding: "12px 20px" }}
+                >
                   <button
                     type="button"
                     onClick={toggleTheme}
@@ -109,12 +130,18 @@ class Header extends Component {
                       background: "none",
                       border: "none",
                       cursor: "pointer",
-                      fontSize: "1.1rem",
+                      fontSize: "1.2rem",
                       color: theme.text,
-                      padding: "5px",
+                      padding: "6px",
+                      display: "flex",
+                      alignItems: "center",
+                      gap: "8px",
                     }}
                   >
-                    {themeMode === "dark" ? "☀️" : "🌙"}
+                    <span>{themeMode === "dark" ? "☀️" : "🌙"}</span>
+                    <span className="theme-toggle-label" style={{ fontSize: "14px", color: theme.secondaryText }}>
+                      {themeMode === "dark" ? "Light Mode" : "Dark Mode"}
+                    </span>
                   </button>
                 </li>
               )}

@@ -387,15 +387,19 @@
 
 .main {
   width: 90%;
+  max-width: 1200px;
   padding: 20px 10px;
   margin: 0px auto;
   margin-top: 4rem;
+  box-sizing: border-box;
 }
 .greet-main {
   width: 90%;
+  max-width: 1200px;
   padding: 20px 10px;
   margin: 0px auto;
   margin-top: 2rem;
+  box-sizing: border-box;
 }
 
 .gretting-main {
@@ -406,6 +410,7 @@
 
 .greeting-main {
   display: flex;
+  align-items: center;
 }
 
 .greeting-main > * {
@@ -418,7 +423,7 @@
 }
 
 .availability-wrapper {
-  margin-top: 40px;
+  margin-top: 20px;
   margin-bottom: 15px;
 }
 
@@ -430,6 +435,8 @@
   padding: 6px 16px;
   border-radius: 20px;
   letter-spacing: 0.2px;
+  max-width: 100%;
+  box-sizing: border-box;
 }
 
 .availability-dot {
@@ -439,30 +446,53 @@
   margin-right: 8px;
   display: inline-block;
   box-shadow: 0 0 0 2px rgba(16, 185, 129, 0.25);
+  flex-shrink: 0;
 }
 
 .greeting-text {
   margin-top: 10px;
   font-size: 46px;
   line-height: 1.2;
-  font-family: "Google Sans Bold";
+  font-family: "Google Sans Bold", sans-serif;
+  word-break: break-word;
 }
 
 .greeting-nickname {
   font-size: 26px;
   line-height: normal;
-  font-family: "Google Sans Bold Italic";
+  font-family: "Google Sans Bold Italic", sans-serif;
 }
 
 .greeting-text-p {
   font-size: 19px;
   line-height: 30px;
   margin-right: 40px;
-  font-family: "Google Sans Medium";
+  font-family: "Google Sans Medium", sans-serif;
+}
+
+.portfolio-repo-btn-div {
+  display: flex;
+  gap: 15px;
+  flex-wrap: wrap;
+  margin-top: 24px;
+}
+
+.greeting-image-div {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  max-width: 100%;
+  overflow: hidden;
 }
 
 .greeting-image-div > * {
   max-width: 100%;
+  height: auto;
+}
+
+.greeting-image-div svg {
+  width: 100%;
   height: auto;
 }
 
@@ -476,37 +506,100 @@
     line-height: 28px;
   }
 }
+
 @media (max-width: 768px) {
-  .button-greeting-div {
-    justify-content: space-around;
+  .greet-main {
+    width: 92%;
+    padding: 10px 0;
+    margin-top: 1rem;
   }
+
+  .button-greeting-div {
+    justify-content: center;
+  }
+
   .availability-wrapper {
     margin-top: 0px;
     text-align: center;
+    display: flex;
+    justify-content: center;
   }
+
   .greeting-text {
-    font-size: 28px;
+    font-size: clamp(24px, 6vw, 32px);
     margin-top: 10px;
     text-align: center;
+    line-height: 1.25;
   }
+
   .greeting-nickname {
     font-size: 20px;
     text-align: center;
   }
+
   .greeting-text-p {
     font-size: 16px;
     margin-right: 0px;
-    line-height: 24px;
+    line-height: 25px;
     text-align: center;
   }
+
   .greeting-main {
-    display: block;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .greeting-text-div {
+    width: 100%;
+    text-align: center;
+  }
+
+  .greeting-image-div {
+    margin-top: 15px;
+  }
+
+  .greeting-image-div svg {
+    max-width: 380px;
   }
 
   .portfolio-repo-btn-div {
     width: 100%;
     display: flex;
     justify-content: center;
+  }
+}
+
+@media (max-width: 480px) {
+  .greet-main {
+    width: 94%;
+  }
+
+  .portfolio-repo-btn-div {
+    flex-direction: column;
+    align-items: stretch;
+    width: 100%;
+    max-width: 280px;
+    margin: 20px auto 0 auto !important;
+    gap: 12px !important;
+  }
+
+  .portfolio-repo-btn-div .portfolio-repo-btn {
+    width: 100% !important;
+  }
+
+  .portfolio-repo-btn-div a,
+  .portfolio-repo-btn-div .main-button {
+    width: 100% !important;
+    box-sizing: border-box !important;
+    margin-top: 0 !important;
+    text-align: center;
+    padding: 13px 18px !important;
+    font-size: 15px !important;
+  }
+
+  .availability-badge {
+    font-size: 12px;
+    padding: 5px 12px;
   }
 }
 
@@ -534,4 +627,38 @@
   font-family: "Inter", sans-serif;
   font-size: 0.725rem;
   margin-top: 0.15rem;
+}
+
+@media (max-width: 640px) {
+  .hero-metrics-bar {
+    grid-template-columns: 1fr !important;
+    margin-top: 1.5rem;
+    border-radius: 1rem;
+  }
+
+  .metric-card {
+    padding: 1.15rem 1rem !important;
+    gap: 0.85rem !important;
+    border-bottom: 1px solid rgba(0, 28, 85, 0.08) !important;
+    border-right: none !important;
+  }
+
+  .metric-icon {
+    width: 2.5rem !important;
+    height: 2.5rem !important;
+    font-size: 1.1rem !important;
+    border-radius: 0.65rem !important;
+  }
+
+  .metric-value {
+    font-size: 1.65rem !important;
+  }
+
+  .metric-label {
+    font-size: 0.825rem !important;
+  }
+
+  .metric-sub {
+    font-size: 0.725rem !important;
+  }
 }

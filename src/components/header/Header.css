@@ -1,136 +1,202 @@
-/* Classic Header */
+/* Classic Responsive Header */
 
 .header {
-  display: block;
-  max-width: 90%;
-  padding: 20px 10px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  width: 90%;
+  max-width: 1200px;
+  padding: 18px 10px;
   margin: 0px auto;
+  position: relative;
+  box-sizing: border-box;
 }
 
 .header ul {
   margin: 0;
   padding: 0;
   list-style: none;
-  overflow: hidden;
 }
+
 .grey-color {
   color: #868e96;
 }
 
 .header li a {
   display: block;
-  padding: 20px 20px;
+  padding: 14px 20px;
   text-decoration: none;
+  font-size: 16px;
+  transition: background-color 0.2s ease;
 }
 
 .header .logo {
-  display: block;
-  float: left;
-  font-size: 1.5em;
+  display: flex;
+  align-items: center;
+  font-size: 1.4em;
   text-decoration: none;
-  margin-top: 10px;
   line-height: normal;
+  max-width: calc(100% - 60px);
 }
+
 .header .logo-name {
   font-family: "Agustina Regular";
   font-weight: bold;
-  padding: 0 10px;
+  padding: 0 8px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
 }
 
-/* menu */
+/* Menu Dropdown */
 
 .menu {
-  font-family: "Google Sans Regular";
+  font-family: "Google Sans Regular", sans-serif;
 }
 
 .header .menu {
+  width: 100%;
   clear: both;
   max-height: 0;
-  transition: max-height 0.2s ease-out;
+  overflow: hidden;
+  transition: max-height 0.35s cubic-bezier(0.16, 1, 0.3, 1), opacity 0.25s ease;
+  opacity: 0;
+  border-radius: 14px;
 }
 
-/* menu icon */
+/* Menu Icon */
 
 .header .menu-icon {
   cursor: pointer;
-  display: inline-block;
-  float: right;
-  padding: 28px 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 44px;
+  height: 44px;
   position: relative;
   user-select: none;
+  z-index: 10;
 }
 
 .header .menu-icon .navicon {
-  background: #333;
   display: block;
   height: 2px;
   position: relative;
   transition: background 0.2s ease-out;
-  width: 18px;
+  width: 22px;
+  border-radius: 2px;
 }
 
 .header .menu-icon .navicon:before,
 .header .menu-icon .navicon:after {
-  background: #333;
+  background: inherit;
   content: "";
   display: block;
   height: 100%;
   position: absolute;
   transition: all 0.2s ease-out;
   width: 100%;
+  border-radius: 2px;
 }
 
 .header .menu-icon .navicon:before {
-  top: 5px;
+  top: 7px;
 }
 
 .header .menu-icon .navicon:after {
-  top: -5px;
+  top: -7px;
 }
 
-/* menu btn */
+/* Menu Btn Checkbox */
 
 .header .menu-btn {
   display: none;
 }
 
 .header .menu-btn:checked ~ .menu {
-  max-height: 370px;
+  max-height: 500px;
+  opacity: 1;
+  margin-top: 12px;
+  box-shadow: 0 12px 36px rgba(0, 28, 85, 0.1);
+  border-width: 1px;
+  border-style: solid;
+  padding: 8px 0;
 }
 
 .header .menu-btn:checked ~ .menu-icon .navicon {
-  background: transparent;
+  background: transparent !important;
 }
 
 .header .menu-btn:checked ~ .menu-icon .navicon:before {
   transform: rotate(-45deg);
+  top: 0;
 }
 
 .header .menu-btn:checked ~ .menu-icon .navicon:after {
   transform: rotate(45deg);
-}
-
-.header .menu-btn:checked ~ .menu-icon:not(.steps) .navicon:before,
-.header .menu-btn:checked ~ .menu-icon:not(.steps) .navicon:after {
   top: 0;
 }
 
-/* 69em = 1104px */
+/* Desktop Breakpoint */
 
 @media (min-width: 69em) {
+  .header {
+    flex-wrap: nowrap;
+    padding: 20px 10px;
+  }
+
+  .header .logo {
+    max-width: none;
+  }
+
   .header li {
     float: left;
   }
-  .header {
+
+  .header li a {
+    padding: 10px 16px;
+    border-radius: 8px;
+  }
+
+  .header .menu {
+    width: auto;
+    max-height: none;
+    overflow: visible;
+    opacity: 1;
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    border: none !important;
+    box-shadow: none !important;
+    margin-top: 0 !important;
+    padding: 0 !important;
   }
-  .header .menu {
-    max-height: none;
-  }
+
   .header .menu-icon {
     display: none;
+  }
+
+  .theme-toggle-label {
+    display: none;
+  }
+
+  .theme-toggle-li {
+    padding: 0 8px !important;
+  }
+}
+
+@media (max-width: 480px) {
+  .header {
+    width: 94%;
+    padding: 12px 6px;
+  }
+
+  .header .logo {
+    font-size: 1.15em;
+  }
+
+  .header .logo-name {
+    padding: 0 4px;
   }
 }
 

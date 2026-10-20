@@ -123,7 +123,8 @@
 .featured-card-actions {
   display: flex;
   align-items: center;
-  gap: 10px;
+  flex-wrap: wrap;
+  gap: 8px;
   margin-top: auto;
   padding-top: 6px;
 }
@@ -184,3 +185,15 @@
     height: 120px;
   }
 }
+
+@media (max-width: 480px) {
+  .featured-card-body {
+    padding: 1rem 0.9rem;
+  }
+  .featured-btn-github,
+  .featured-btn-live {
+    padding: 7px 11px;
+    font-size: 12px;
+  }
+}
+
