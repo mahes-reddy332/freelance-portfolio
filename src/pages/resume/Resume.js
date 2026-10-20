@@ -76,11 +76,12 @@ export default class ResumePage extends Component {
 
   render() {
     const theme = this.props.theme;
+    const { toggleTheme, themeMode } = this.props;
     const { pageWidth, numPages, currentPage, isLoading, error } = this.state;
 
     return (
-      <div className="resume-main">
-        <Header theme={theme} />
+      <div className="resume-main" style={{ paddingTop: "5rem" }}>
+        <Header theme={theme} toggleTheme={toggleTheme} themeMode={themeMode} />
         <div className="resume-view">
           <Fade bottom duration={2000} distance="40px">
             <div>

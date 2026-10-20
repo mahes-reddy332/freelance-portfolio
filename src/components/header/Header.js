@@ -18,7 +18,9 @@ const onMouseOut = (event) => {
 class Header extends Component {
   render() {
     const theme = this.props.theme;
+    const { toggleTheme, themeMode } = this.props;
     const link = settings.isSplash ? "/splash" : "home";
+
     return (
       <Fade top duration={1000} distance="20px">
         <SeoHeader />
@@ -96,6 +98,26 @@ class Header extends Component {
                   Hire Me
                 </NavLink>
               </li>
+              {toggleTheme && (
+                <li style={{ display: "flex", alignItems: "center", padding: "0 10px" }}>
+                  <button
+                    type="button"
+                    onClick={toggleTheme}
+                    title={`Switch to ${themeMode === "dark" ? "light" : "dark"} mode`}
+                    aria-label="Toggle theme"
+                    style={{
+                      background: "none",
+                      border: "none",
+                      cursor: "pointer",
+                      fontSize: "1.1rem",
+                      color: theme.text,
+                      padding: "5px",
+                    }}
+                  >
+                    {themeMode === "dark" ? "☀️" : "🌙"}
+                  </button>
+                </li>
+              )}
             </ul>
           </header>
         </div>

@@ -2,11 +2,13 @@ import React, { Component } from "react";
 import Header from "../../components/header/Header";
 import Greeting from "../../containers/greeting/Greeting";
 import Skills from "../../containers/skills/Skills";
+import Services from "../../containers/services/Services";
+import Process from "../../containers/process/Process";
 import FeaturedProjectCard from "../../components/featuredProjectCard/FeaturedProjectCard";
 import ExperienceAccordion from "../../containers/experienceAccordion/ExperienceAccordion";
 import Educations from "../../containers/education/Educations";
 import Certifications from "../../containers/certifications/Certifications";
-import SocialMedia from "../../components/socialMedia/SocialMedia";
+import ContactSection from "../../containers/contact/ContactSection";
 import Button from "../../components/button/Button";
 import Footer from "../../components/footer/Footer";
 import TopButton from "../../components/topButton/TopButton";
@@ -14,23 +16,25 @@ import ProjectsData from "../../shared/opensource/projects.json";
 import {
   experience,
   certifications,
-  contactPageData,
 } from "../../portfolio.js";
 import { Fade } from "react-reveal";
 import "./HomeComponent.css";
 
 class Home extends Component {
   render() {
-    const theme = this.props.theme;
+    const { theme, toggleTheme, themeMode } = this.props;
     const featuredProjects = ProjectsData.data.filter((p) => p.featured);
 
     return (
-      <div>
-        <Header theme={theme} />
+      <div className="portfolio-homepage">
+        <Header theme={theme} toggleTheme={toggleTheme} themeMode={themeMode} />
 
         {/* 1. Hero / Introduction */}
         <Greeting theme={theme} />
         <Skills theme={theme} />
+
+        {/* Freelance Services */}
+        <Services theme={theme} />
 
         {/* 2. Selected Projects */}
         {featuredProjects.length > 0 && (
@@ -70,6 +74,9 @@ class Home extends Component {
             </div>
           </div>
         )}
+
+        {/* Client Delivery Process */}
+        <Process theme={theme} />
 
         {/* 3. Experience & Research */}
         <div className="home-section" id="experience">
@@ -114,63 +121,8 @@ class Home extends Component {
             )}
         </div>
 
-        {/* 5. Contact */}
-        <div className="home-section" id="contact">
-          <Fade bottom duration={1000} distance="20px">
-            <div
-              className="home-contact-card"
-              style={{ backgroundColor: theme.highlight }}
-            >
-              <h1
-                className="home-section-title"
-                style={{ color: theme.text, textAlign: "center" }}
-              >
-                {contactPageData.contactSection.title}
-              </h1>
-              <p
-                className="home-section-subtitle subTitle"
-                style={{
-                  color: theme.secondaryText,
-                  textAlign: "center",
-                  maxWidth: "750px",
-                  margin: "12px auto 24px auto",
-                  lineHeight: "1.6",
-                }}
-              >
-                {contactPageData.contactSection.description}
-              </p>
-              <div
-                style={{
-                  display: "flex",
-                  justifyContent: "center",
-                  marginBottom: "24px",
-                }}
-              >
-                <SocialMedia theme={theme} />
-              </div>
-              <div
-                style={{
-                  display: "flex",
-                  gap: "16px",
-                  justifyContent: "center",
-                  flexWrap: "wrap",
-                }}
-              >
-                <Button
-                  text="Hire Me / Email"
-                  href="mailto:mahesreddymula@gmail.com"
-                  newTab={true}
-                  theme={theme}
-                />
-                <Button
-                  text="See My Resume"
-                  href="/resume"
-                  theme={theme}
-                />
-              </div>
-            </div>
-          </Fade>
-        </div>
+        {/* 5. Contact & Client Inquiry */}
+        <ContactSection theme={theme} />
 
         <Footer theme={theme} />
         <TopButton theme={theme} />

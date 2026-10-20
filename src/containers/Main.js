@@ -37,6 +37,10 @@ export default class Main extends Component {
         ) || "/"
       : "/";
 
+    const theme = this.props.theme;
+    const toggleTheme = this.props.toggleTheme;
+    const themeMode = this.props.themeMode;
+
     return (
       <BrowserRouter basename={routerBaseName}>
         <Switch>
@@ -45,52 +49,62 @@ export default class Main extends Component {
             exact
             render={(props) =>
               settings.isSplash ? (
-                <Splash {...props} theme={this.props.theme} />
+                <Splash {...props} theme={theme} toggleTheme={toggleTheme} themeMode={themeMode} />
               ) : (
-                <Home {...props} theme={this.props.theme} />
+                <Home {...props} theme={theme} toggleTheme={toggleTheme} themeMode={themeMode} />
               )
             }
           />
           <Route
             path="/home"
-            render={(props) => <Home {...props} theme={this.props.theme} />}
+            render={(props) => (
+              <Home {...props} theme={theme} toggleTheme={toggleTheme} themeMode={themeMode} />
+            )}
           />
           <Route
             path="/experience"
             exact
             render={(props) => (
-              <Experience {...props} theme={this.props.theme} />
+              <Experience {...props} theme={theme} toggleTheme={toggleTheme} themeMode={themeMode} />
             )}
           />
           <Route
             path="/education"
             render={(props) => (
-              <Education {...props} theme={this.props.theme} />
+              <Education {...props} theme={theme} toggleTheme={toggleTheme} themeMode={themeMode} />
             )}
           />
           <Route
             path="/contact"
-            render={(props) => <Contact {...props} theme={this.props.theme} />}
+            render={(props) => (
+              <Contact {...props} theme={theme} toggleTheme={toggleTheme} themeMode={themeMode} />
+            )}
           />
 
           {settings.isSplash && (
             <Route
               path="/splash"
-              render={(props) => <Splash {...props} theme={this.props.theme} />}
+              render={(props) => (
+                <Splash {...props} theme={theme} toggleTheme={toggleTheme} themeMode={themeMode} />
+              )}
             />
           )}
 
           <Route
             path="/projects"
-            render={(props) => <Projects {...props} theme={this.props.theme} />}
+            render={(props) => (
+              <Projects {...props} theme={theme} toggleTheme={toggleTheme} themeMode={themeMode} />
+            )}
           />
           <Route
             path="/resume"
-            render={(props) => <ResumePage {...props} theme={this.props.theme} />}
+            render={(props) => (
+              <ResumePage {...props} theme={theme} toggleTheme={toggleTheme} themeMode={themeMode} />
+            )}
           />
           <Route
             path="*"
-            render={(props) => <Error404 {...props} theme={this.props.theme} />}
+            render={(props) => <Error404 {...props} theme={theme} />}
           />
         </Switch>
       </BrowserRouter>

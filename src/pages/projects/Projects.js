@@ -19,13 +19,13 @@ import ProjectsImg from "./ProjectsImg";
 
 class Projects extends Component {
   render() {
-    const theme = this.props.theme;
+    const { theme, toggleTheme, themeMode } = this.props;
     const featuredProjects = ProjectsData.data.filter((p) => p.featured);
     const moreProjects = ProjectsData.data.filter((p) => !p.featured);
 
     return (
       <div className="projects-main">
-        <Header theme={theme} />
+        <Header theme={theme} toggleTheme={toggleTheme} themeMode={themeMode} />
 
         {/* 1. Header with Illustration */}
         <div className="basic-projects">
@@ -159,8 +159,8 @@ class Projects extends Component {
           </div>
         )}
 
-        <Footer theme={this.props.theme} onToggle={this.props.onToggle} />
-        <TopButton theme={this.props.theme} />
+        <Footer theme={theme} />
+        <TopButton theme={theme} />
       </div>
     );
   }

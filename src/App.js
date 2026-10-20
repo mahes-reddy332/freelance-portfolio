@@ -1,17 +1,41 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import "./App.css";
 import Main from "./containers/Main";
 import { ThemeProvider } from "styled-components";
-import { chosenTheme } from "./theme";
+import { blueTheme, modernDarkTheme } from "./theme";
 import { GlobalStyles } from "./global";
 
 function App() {
+  const [themeMode, setThemeMode] = useState(() => {
+    return localStorage.getItem("portfolio_theme") || "light";
+  });
+
+  const toggleTheme = () => {
+    const nextMode = themeMode === "dark" ? "light" : "dark";
+    setThemeMode(nextMode);
+    localStorage.setItem("portfolio_theme", nextMode);
+  };
+
+  const currentTheme = themeMode === "dark" ? modernDarkTheme : blueTheme;
+
+  useEffect(() => {
+    document.documentElement.setAttribute("data-theme", themeMode);
+    if (document.body) {
+      document.body.style.backgroundColor = currentTheme.body;
+      document.body.style.color = currentTheme.text;
+    }
+  }, [themeMode, currentTheme]);
+
   return (
-    <ThemeProvider theme={chosenTheme}>
+    <ThemeProvider theme={currentTheme}>
       <>
         <GlobalStyles />
-        <div>
-          <Main theme={chosenTheme} />
+        <div className="portfolio-app-root">
+          <Main
+            theme={currentTheme}
+            toggleTheme={toggleTheme}
+            themeMode={themeMode}
+          />
         </div>
       </>
     </ThemeProvider>
@@ -19,3 +43,4 @@ function App() {
 }
 
 export default App;
+

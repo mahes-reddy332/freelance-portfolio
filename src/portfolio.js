@@ -5,27 +5,151 @@ const settings = {
 };
 
 const seo = {
-  title: "Mahesh Reddy Mula | AI & Software Developer Portfolio",
+  title: "Mahesh Reddy Mula | Freelance AI/ML & Generative AI Engineer",
   description:
-    "Building intelligent AI solutions, machine learning systems, LLM integrations, and automation workflows that turn ideas into working software.",
+    "AI/ML Engineer & Generative AI Developer specializing in production LangGraph multi-agent systems, enterprise RAG pipelines, fine-tuned LLMs, and scalable machine learning applications.",
   og: {
-    title: "Mahesh Reddy Mula — AI & Software Developer",
+    title: "Mahesh Reddy Mula — Freelance AI & GenAI Engineer",
     type: "website",
-    url: "https://github.com/mahes-reddy332",
+    url: "https://mahes-reddy332.github.io/freelance-portfolio",
   },
 };
 
 const greeting = {
   title: "Building Intelligent AI Solutions for Real-World Problems",
   name: "Mahesh Reddy",
+  role: "AI/ML Engineer & Generative AI Developer",
   logo_name: "Mahesh Reddy",
+  nickname: "Mahesh",
   subTitle:
     "I develop AI-powered applications, machine learning solutions, LLM integrations, and automation workflows that help turn ideas into working software.",
   availability: "Available for Freelance Projects",
+  location: "Remote / India (Serving Global Clients)",
   resumeLink: "/resume",
-  portfolio_repository: "https://github.com/mahes-reddy332/FreelancePortfolio",
+  portfolio_repository: "https://github.com/mahes-reddy332/freelance-portfolio",
   githubProfile: "https://github.com/mahes-reddy332",
+  email: "mahesreddymula@gmail.com",
+  phone: "+91 6301828916",
+  linkedin: "https://www.linkedin.com/in/mahesh-reddy-mula-369z/",
+  calendly: "mailto:mahesreddymula@gmail.com?subject=Project%20Inquiry%20with%20Mahesh%20Reddy",
 };
+
+const metrics = [
+  {
+    value: "10+",
+    label: "AI Systems Delivered",
+    subLabel: "Production LangGraph, FastAPI & PyTorch",
+    icon: "fa-solid fa-layer-group",
+  },
+  {
+    value: "99%+",
+    label: "Pipeline Precision",
+    subLabel: "Hallucination-free RAG & fact-checking",
+    icon: "fa-solid fa-shield-halved",
+  },
+  {
+    value: "2x",
+    label: "Dual Degree Honors",
+    subLabel: "NIT Raipur (8.77) + IIT Madras (7.50)",
+    icon: "fa-solid fa-graduation-cap",
+  },
+  {
+    value: "<24h",
+    label: "Client Response SLA",
+    subLabel: "Rapid MVP prototyping & communication",
+    icon: "fa-solid fa-bolt",
+  },
+];
+
+const freelanceServices = [
+  {
+    id: "genai-rag",
+    number: "01",
+    title: "Generative AI & Enterprise RAG",
+    tagline: "Custom LLM solutions grounded in your company's proprietary data",
+    description: "Design and implement production-grade Retrieval-Augmented Generation (RAG) architectures with hybrid dense/sparse search, ChromaDB/FAISS vector databases, semantic reranking, context compression, and automated fact-checking guardrails to eliminate hallucinations.",
+    deliverables: [
+      "Domain-specific RAG pipelines with ChromaDB/FAISS",
+      "Semantic search & automated citation verification",
+      "Real-time Server-Sent Events (SSE) streaming chat interfaces",
+      "Guardrails, prompt evaluation & LangSmith observability",
+    ],
+    technologies: ["LangChain", "ChromaDB", "FAISS", "OpenAI / Claude", "FastAPI", "Next.js"],
+    icon: "fa-solid fa-brain",
+  },
+  {
+    id: "agentic-automation",
+    number: "02",
+    title: "Autonomous Agents & MCP Automation",
+    tagline: "Multi-agent collaborative workflows and Model Context Protocol servers",
+    description: "Build robust autonomous agents powered by LangGraph that plan, execute tool calls, coordinate specialized sub-agents, and integrate Human-in-the-Loop (HITL) approval gates. Deploy FastMCP servers for desktop and cloud AI assistants.",
+    deliverables: [
+      "Stateful multi-agent DAG workflows using LangGraph",
+      "FastMCP tool servers with remote HTTP/SSE deployment",
+      "Autonomous multi-step research, writing & validation pipelines",
+      "Human-in-the-loop review checkpoints & persistent memory",
+    ],
+    technologies: ["LangGraph", "FastMCP", "Model Context Protocol", "Python", "SQLite", "Claude Desktop"],
+    icon: "fa-solid fa-robot",
+  },
+  {
+    id: "ml-predictive",
+    number: "03",
+    title: "Machine Learning & Predictive Modeling",
+    tagline: "Data-driven statistical models and deep neural networks",
+    description: "End-to-end predictive modeling from exploratory data analysis and feature engineering to model training, hyperparameter tuning, and deployment. Expertise in ensemble forecasting (XGBoost, LightGBM) and deep learning with PyTorch.",
+    deliverables: [
+      "Custom regression, classification & forecasting models",
+      "Tabular feature engineering & automated data pipelines",
+      "Computer vision SEM image segmentation (OpenCV)",
+      "Bayesian optimization with Gaussian Process surrogates",
+    ],
+    technologies: ["PyTorch", "Scikit-learn", "XGBoost", "LightGBM", "OpenCV", "SciPy"],
+    icon: "fa-solid fa-chart-line",
+  },
+  {
+    id: "fullstack-cloud",
+    number: "04",
+    title: "Full-Stack AI Integration & High-Throughput APIs",
+    tagline: "Bridging intelligent models with fast, reactive web frontends",
+    description: "Deliver complete, end-to-end AI applications. High-performance asynchronous FastAPI backends with WebSocket/SSE streaming connected to modern React 19/Next.js interfaces, Docker containerization, and GCP cloud hosting.",
+    deliverables: [
+      "Asynchronous FastAPI REST & Streaming APIs",
+      "Interactive React & Next.js user interfaces",
+      "Dockerized containerization & GCP cloud deployment",
+      "Relational database modeling with PostgreSQL & SQLite",
+    ],
+    technologies: ["FastAPI", "React", "TypeScript", "Docker", "PostgreSQL", "Google Cloud"],
+    icon: "fa-solid fa-cubes",
+  },
+];
+
+const deliveryProcess = [
+  {
+    step: "01",
+    name: "Discovery & Feasibility Audit",
+    timeline: "Days 1 – 2",
+    summary: "Understand your business objectives, review data availability, evaluate model requirements, and map out technical feasibility and measurable KPIs.",
+  },
+  {
+    step: "02",
+    name: "Architecture & Rapid MVP",
+    timeline: "Days 3 – 7",
+    summary: "Deliver an end-to-end interactive proof-of-concept. Validate core model accuracy, RAG retrieval quality, and tool calling before investing in full production scaling.",
+  },
+  {
+    step: "03",
+    name: "Production Engineering & Guardrails",
+    timeline: "Days 8 – 14",
+    summary: "Harden the pipeline with latency optimizations, token caching, evaluation benchmarks, semantic fact-checking guardrails, and LangSmith tracing.",
+  },
+  {
+    step: "04",
+    name: "Deployment & Turnkey Handoff",
+    timeline: "Days 15+",
+    summary: "Containerize via Docker, deploy to cloud infrastructure (GCP), provide interactive API documentation (OpenAPI), and conduct team walkthrough sessions.",
+  },
+];
 
 const socialMediaLinks = [
   {
@@ -477,6 +601,9 @@ export {
   seo,
   greeting,
   socialMediaLinks,
+  metrics,
+  freelanceServices,
+  deliveryProcess,
   skills,
   competitiveSites,
   degrees,

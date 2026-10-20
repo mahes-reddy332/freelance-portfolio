@@ -5,6 +5,7 @@ import TopButton from "../../components/topButton/TopButton";
 import SocialMedia from "../../components/socialMedia/SocialMedia";
 import Button from "../../components/button/Button";
 import AddressImg from "./AddressImg";
+import ContactSection from "../../containers/contact/ContactSection";
 import { Fade } from "react-reveal";
 import "./ContactComponent.css";
 import { contactPageData } from "../../portfolio.js";
@@ -16,10 +17,11 @@ const phoneSection = contactPageData.phoneSection;
 
 class Contact extends Component {
   render() {
-    const theme = this.props.theme;
+    const { theme, toggleTheme, themeMode } = this.props;
+
     return (
       <div className="contact-main">
-        <Header theme={theme} />
+        <Header theme={theme} toggleTheme={toggleTheme} themeMode={themeMode} />
         <div className="basic-contact">
           <Fade bottom duration={1000} distance="40px">
             <div className="contact-heading-div">
@@ -146,8 +148,12 @@ class Contact extends Component {
             </div>
           </Fade>
         </div>
-        <Footer theme={this.props.theme} onToggle={this.props.onToggle} />
-        <TopButton theme={this.props.theme} />
+
+        {/* Interactive Inquiry Form */}
+        <ContactSection theme={theme} />
+
+        <Footer theme={theme} />
+        <TopButton theme={theme} />
       </div>
     );
   }

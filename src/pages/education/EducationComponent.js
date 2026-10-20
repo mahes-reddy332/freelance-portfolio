@@ -13,10 +13,10 @@ import { Fade } from "react-reveal";
 
 class Education extends Component {
   render() {
-    const theme = this.props.theme;
+    const { theme, toggleTheme, themeMode } = this.props;
     return (
-      <div className="education-main">
-        <Header theme={this.props.theme} />
+      <div className="education-main" style={{ paddingTop: "5rem" }}>
+        <Header theme={theme} toggleTheme={toggleTheme} themeMode={themeMode} />
         <div className="basic-education">
           <Fade bottom duration={2000} distance="40px">
             <div className="heading-div">
