@@ -43,7 +43,16 @@ class Contact extends Component {
                   {ContactData["description"]}
                 </p>
                 <SocialMedia theme={theme} />
-                <div className="resume-btn-div">
+                <div
+                  className="resume-btn-div"
+                  style={{ display: "flex", gap: "15px", flexWrap: "wrap" }}
+                >
+                  <Button
+                    text="Email Me"
+                    href="mailto:mahesreddymula@gmail.com"
+                    newTab={true}
+                    theme={theme}
+                  />
                   <Button
                     text="See My Resume"
                     href="/resume"
@@ -67,7 +76,7 @@ class Contact extends Component {
                 </p>
                 <div className="blogsite-btn-div">
                   <Button
-                    text="Visit My Blogsite"
+                    text="Visit GitHub Profile"
                     newTab={true}
                     href={blogSection.link}
                     theme={theme}
@@ -86,10 +95,6 @@ class Contact extends Component {
           <Fade bottom duration={1000} distance="40px">
             <div className="address-heading-div">
               <div className="contact-heading-img-div">
-                {/* <img
-											src={require(`../../assets/images/${addressSection["avatar_image_path"]}`)}
-											alt=""
-										/> */}
                 <AddressImg theme={theme} />
               </div>
               <div className="address-heading-text-div">
@@ -105,18 +110,30 @@ class Contact extends Component {
                 >
                   {addressSection["subtitle"]}
                 </p>
-                <h1
-                  className="address-heading-text"
-                  style={{ color: theme.text }}
-                >
-                  {phoneSection["title"]}
-                </h1>
-                <p
-                  className="contact-header-detail-text subTitle"
-                  style={{ color: theme.secondaryText }}
-                >
-                  {phoneSection["subtitle"]}
-                </p>
+                {phoneSection["title"] && (
+                  <>
+                    <h1
+                      className="address-heading-text"
+                      style={{ color: theme.text }}
+                    >
+                      {phoneSection["title"]}
+                    </h1>
+                    <p
+                      className="contact-header-detail-text subTitle"
+                      style={{ color: theme.secondaryText }}
+                    >
+                      <a
+                        href={`mailto:${phoneSection["subtitle"]}`}
+                        style={{
+                          color: theme.imageHighlight,
+                          textDecoration: "none",
+                        }}
+                      >
+                        {phoneSection["subtitle"]}
+                      </a>
+                    </p>
+                  </>
+                )}
                 <div className="address-btn-div">
                   <Button
                     text="Visit on Google Maps"

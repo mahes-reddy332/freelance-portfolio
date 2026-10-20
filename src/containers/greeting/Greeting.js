@@ -14,6 +14,23 @@ export default function Greeting(props) {
         <div className="greeting-main">
           <div className="greeting-text-div">
             <div>
+              {greeting.availability && (
+                <div className="availability-wrapper">
+                  <span
+                    className="availability-badge"
+                    style={{
+                      color: theme.imageHighlight,
+                      backgroundColor: theme.highlight,
+                    }}
+                  >
+                    <span
+                      className="availability-dot"
+                      style={{ backgroundColor: "#10b981" }}
+                    ></span>
+                    {greeting.availability}
+                  </span>
+                </div>
+              )}
               <h1 className="greeting-text" style={{ color: theme.text }}>
                 {greeting.title}
               </h1>
@@ -31,24 +48,15 @@ export default function Greeting(props) {
               <SocialMedia theme={theme} />
               <div className="portfolio-repo-btn-div">
                 <Button
-                  text="⭐ Star Me On Github"
-                  newTab={true}
-                  href={greeting.portfolio_repository}
+                  text="Start a Project"
+                  href="/contact"
                   theme={theme}
                   className="portfolio-repo-btn"
                 />
               </div>
-              {/* <div className="button-greeting-div">
-              <Button text="Contact me" href="#contact" />
-              <Button text="See my resume" newTab={true} href={greeting.resumeLink} />
-            </div> */}
             </div>
           </div>
           <div className="greeting-image-div">
-            {/* <img
-							alt="saad sitting on table"
-							src={require("../../assets/images/feelingProud.svg")}
-						></img> */}
             <FeelingProud theme={theme} />
           </div>
         </div>

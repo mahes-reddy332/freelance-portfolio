@@ -1,96 +1,208 @@
 {
   "data": [
     {
-      "id": "repo-agentic-blog-studio",
-      "name": "AI Blog Studio — Production LangGraph Multi-Agent Platform",
-      "createdAt": "2026-08-01T00:00:00Z",
-      "url": "https://github.com/mahes-reddy332/agentic-blog-studio",
-      "description": "Production-grade agentic AI platform that automates technical content creation through research, outline planning, parallel writing, editorial harmonization, semantic fact-checking, citation validation, quality critique, technical SEO, AI image generation, and multi-format export. Built with Next.js, FastAPI, LangGraph, and React.",
+      "id": "repo-upi-mule-tracer",
+      "name": "UPI Fraud Flow Tracer — MuleHunter",
+      "category": "AI Risk Management · Graph Analytics",
+      "badge": "Razorpay AI Buildathon 2026",
+      "featured": true,
+      "visualType": "graph-analytics",
+      "createdAt": "2026-02-01T00:00:00Z",
+      "url": "https://github.com/mahes-reddy332/upi-mule-tracer",
+      "description": "Defense-first transaction tracing system that unmasks multi-hop layering and structuring mule accounts across 24-hour windows. Employs bidirectional BFS temporal graph traversal and device-fingerprint linkage to generate deterministic, auditable fraud-risk scores.",
       "languages": [
         {
           "name": "Python",
           "iconifyClass": "simple-icons:python"
         },
         {
-          "name": "JavaScript",
-          "iconifyClass": "simple-icons:javascript"
+          "name": "NetworkX",
+          "iconifyClass": "simple-icons:networkx"
         },
         {
-          "name": "TypeScript",
-          "iconifyClass": "simple-icons:typescript"
-        }
-      ]
-    },
-    {
-      "id": "repo-mcp-expense-tracker",
-      "name": "ExpenseTracker MCP Server — Remote Deployment",
-      "createdAt": "2026-08-01T00:00:00Z",
-      "url": "https://github.com/mahes-reddy332/Mcp-Remote-Deploy-Expense-Tracker",
-      "description": "MCP server for managing personal expenses through AI assistants. Built with Python, FastMCP, SQLite, and aiosqlite, with add-expense, list-expenses, spending-summary tools, MCP resources, HTTP transport, and Claude Desktop integration.",
-      "languages": [
-        {
-          "name": "Python",
-          "iconifyClass": "simple-icons:python"
-        }
-      ]
-    },
-    {
-      "id": "repo-ownchatgpt-agentic",
-      "name": "Agentic AI RAG Chatbot — OwnChatGpt",
-      "createdAt": "2026-08-01T00:00:00Z",
-      "url": "https://github.com/mahes-reddy332/OwnChatGpt",
-      "description": "Enterprise-grade full-stack Agentic AI Assistant with LangGraph ReAct workflows, real-time SSE streaming, RAG with ChromaDB, MCP server integration, built-in developer tools, LangSmith observability, long-term memory, conversation summarization, and Human-in-the-Loop approval workflows.",
-      "languages": [
-        {
-          "name": "Python",
-          "iconifyClass": "simple-icons:python"
+          "name": "Docker",
+          "iconifyClass": "simple-icons:docker"
         },
         {
-          "name": "TypeScript",
-          "iconifyClass": "simple-icons:typescript"
-        },
-        {
-          "name": "JavaScript",
-          "iconifyClass": "simple-icons:javascript"
+          "name": "Kafka",
+          "iconifyClass": "simple-icons:apachekafka"
         }
       ]
     },
     {
       "id": "repo-amazon-ml",
-      "name": "AmazonMlChallenge_SmartPricePrediction",
+      "name": "Multimodal Product Price Prediction",
+      "category": "Machine Learning · Computer Vision & NLP",
+      "badge": "Ranked 819th / 82,500+ Teams",
+      "featured": true,
+      "visualType": "multimodal-ml",
       "createdAt": "2025-10-01T00:00:00Z",
       "url": "https://github.com/mahes-reddy332/AmazonMlChallenge_SmartPricePrediction",
-      "description": "Amazon ML Challenge 2025 project focused on smart product price prediction using deep learning and feature engineering.",
+      "description": "Multimodal pricing engine trained on 150K+ product records for the Amazon ML Challenge 2025. Combines 2048-dimensional visual embeddings extracted via ResNet50 and InceptionV3 with transformer-based NLP text features, optimized through gradient-boosted ensembles to achieve a 39 validation SMAPE.",
       "languages": [
         {
-          "name": "Jupyter Notebook",
-          "iconifyClass": "simple-icons:jupyter"
+          "name": "PyTorch",
+          "iconifyClass": "simple-icons:pytorch"
         },
         {
-          "name": "Python",
-          "iconifyClass": "simple-icons:python"
+          "name": "XGBoost",
+          "iconifyClass": "simple-icons:xgboost"
+        },
+        {
+          "name": "LightGBM",
+          "iconifyClass": "simple-icons:lightgbm"
+        },
+        {
+          "name": "Scikit-learn",
+          "iconifyClass": "simple-icons:scikitlearn"
         }
       ]
     },
     {
-      "id": "repo-off-highway",
-      "name": "Off_Highway_Tata_Elxsi",
-      "createdAt": "2025-04-01T00:00:00Z",
-      "url": "https://github.com/mahes-reddy332/Off_Highway_Tata_Elxsi",
-      "description": "TelIPORT case competition project developed for Tata Elxsi challenge tracks.",
+      "id": "repo-ownchatgpt",
+      "name": "OwnChatGPT — Conversational AI Assistant",
+      "category": "LLM Applications · Conversational AI & RAG",
+      "badge": "LangGraph · ChromaDB · SSE",
+      "featured": true,
+      "visualType": "conversational-ai",
+      "createdAt": "2026-08-01T00:00:00Z",
+      "url": "https://github.com/mahes-reddy332/OwnChatGpt",
+      "description": "Full-stack conversational assistant built on LangGraph ReAct agent workflows and ChromaDB vector retrieval. Delivers real-time Server-Sent Events (SSE) streaming, persistent conversation memory, integrated tool calling, and guided algorithmic code debugging.",
       "languages": [
         {
           "name": "Python",
           "iconifyClass": "simple-icons:python"
+        },
+        {
+          "name": "LangGraph",
+          "iconifyClass": "simple-icons:graphql"
+        },
+        {
+          "name": "ChromaDB",
+          "iconifyClass": "simple-icons:databricks"
+        },
+        {
+          "name": "FastAPI",
+          "iconifyClass": "simple-icons:fastapi"
+        },
+        {
+          "name": "React",
+          "iconifyClass": "simple-icons:react"
+        }
+      ]
+    },
+    {
+      "id": "repo-agentic-blog-studio",
+      "name": "Agentic Blog Studio — LangGraph Multi-Agent Platform",
+      "category": "Agentic AI · Workflow Automation",
+      "featured": false,
+      "createdAt": "2026-08-01T00:00:00Z",
+      "url": "https://github.com/mahes-reddy332/agentic-blog-studio",
+      "description": "Multi-agent technical content pipeline coordinating autonomous research, outline synthesis, parallel section drafting, and automated semantic citation validation across structured LangGraph DAG workflows.",
+      "languages": [
+        {
+          "name": "Python",
+          "iconifyClass": "simple-icons:python"
+        },
+        {
+          "name": "LangGraph",
+          "iconifyClass": "simple-icons:graphql"
+        },
+        {
+          "name": "FastAPI",
+          "iconifyClass": "simple-icons:fastapi"
+        },
+        {
+          "name": "TypeScript",
+          "iconifyClass": "simple-icons:typescript"
+        }
+      ]
+    },
+    {
+      "id": "repo-tata-elxsi",
+      "name": "Tata Elxsi TellPORT — Off-Highway Telematics Intelligence",
+      "category": "Applied Engineering · Competition Project",
+      "badge": "Semi-Finalist / 47K+ Teams",
+      "featured": false,
+      "createdAt": "2025-04-01T00:00:00Z",
+      "url": "https://github.com/mahes-reddy332/Off_Highway_Tata_Elxsi",
+      "description": "Edge telematics analytics solution engineered for off-highway vehicles in the Tata Elxsi TELIPORT challenge. Integrates operational sensor data streams with statistical anomaly detection for predictive equipment maintenance.",
+      "languages": [
+        {
+          "name": "Python",
+          "iconifyClass": "simple-icons:python"
+        },
+        {
+          "name": "Scikit-learn",
+          "iconifyClass": "simple-icons:scikitlearn"
+        },
+        {
+          "name": "IoT Analytics",
+          "iconifyClass": "simple-icons:scipy"
+        }
+      ]
+    },
+    {
+      "id": "repo-mcp-expense-tracker",
+      "name": "ExpenseTracker MCP Server & AI Tool Integration",
+      "category": "MCP · AI Agents & Tooling",
+      "featured": false,
+      "createdAt": "2026-08-01T00:00:00Z",
+      "url": "https://github.com/mahes-reddy332/Mcp-Remote-Deploy-Expense-Tracker",
+      "description": "Model Context Protocol (MCP) server developed in FastMCP and SQLite, exposing personal expense recording, category queries, and budget summaries directly to Claude Desktop and AI assistants over HTTP/SSE.",
+      "languages": [
+        {
+          "name": "Python",
+          "iconifyClass": "simple-icons:python"
+        },
+        {
+          "name": "FastMCP",
+          "iconifyClass": "simple-icons:fastapi"
+        },
+        {
+          "name": "SQLite",
+          "iconifyClass": "simple-icons:sqlite"
+        }
+      ]
+    },
+    {
+      "id": "repo-smartsahaayak",
+      "name": "SmartSahaayak — AI Assistant for Small Enterprises",
+      "category": "Full-Stack Web · Business Tools",
+      "badge": "Live Web App",
+      "featured": false,
+      "createdAt": "2025-11-01T00:00:00Z",
+      "url": "https://github.com/mahes-reddy332/Smart_Sahaayak",
+      "liveUrl": "https://smartsahaayak.netlify.app",
+      "description": "Mobile-first assistant for local retail store owners, replacing manual bookkeeping with automated daily sales recording, inventory tracking, instant bill generation, and customer balance alerts.",
+      "languages": [
+        {
+          "name": "React",
+          "iconifyClass": "simple-icons:react"
+        },
+        {
+          "name": "TypeScript",
+          "iconifyClass": "simple-icons:typescript"
+        },
+        {
+          "name": "Tailwind",
+          "iconifyClass": "simple-icons:tailwindcss"
+        },
+        {
+          "name": "Vite",
+          "iconifyClass": "simple-icons:vite"
         }
       ]
     },
     {
       "id": "repo-ai-clinical-trial",
-      "name": "AI-Driven Clinical Trial Data Analytics",
+      "name": "Clinical Trial Data Quality & Operations Platform",
+      "category": "Data Analytics · Healthcare AI",
+      "badge": "Novartis NEST 2.0 Semi-Finalist",
+      "featured": false,
       "createdAt": "2026-01-01T00:00:00Z",
       "url": "https://github.com/mahes-reddy332/G-14_Nest_Nitraipur",
-      "description": "Integrated analytics platform for clinical trial data from multi-source systems with real-time dashboards and Agentic AI recommendations.",
+      "description": "Centralized operational platform consolidating multi-source Electronic Data Capture (EDC) feeds across clinical trial sites, featuring automated SQL ingestion pipelines and statistical anomaly detection for protocol compliance.",
       "languages": [
         {
           "name": "Python",
@@ -99,71 +211,80 @@
         {
           "name": "SQL",
           "iconifyClass": "simple-icons:mysql"
+        },
+        {
+          "name": "FastAPI",
+          "iconifyClass": "simple-icons:fastapi"
+        },
+        {
+          "name": "Docker",
+          "iconifyClass": "simple-icons:docker"
+        }
+      ]
+    },
+    {
+      "id": "repo-iitm-biomaterials",
+      "name": "AI-Driven Biomaterials SEM Analysis & Optimization",
+      "category": "Computer Vision · Applied Research",
+      "badge": "IIT Madras Research",
+      "featured": false,
+      "createdAt": "2025-07-01T00:00:00Z",
+      "url": "https://github.com/mahes-reddy332",
+      "description": "Automated SEM image-analysis pipeline using OpenCV (CLAHE, watershed segmentation) to extract nanorod morphology for 200+ particles/image, coupled with Gaussian Process Bayesian optimization for 3D bioprinting bioinks.",
+      "languages": [
+        {
+          "name": "Python",
+          "iconifyClass": "simple-icons:python"
+        },
+        {
+          "name": "OpenCV",
+          "iconifyClass": "simple-icons:opencv"
+        },
+        {
+          "name": "SciPy",
+          "iconifyClass": "simple-icons:scipy"
         }
       ]
     },
     {
       "id": "repo-zomathon",
-      "name": "Recommendation System",
+      "name": "Personalized Recommendation System — Zomathon",
+      "category": "Data Science · Machine Learning",
+      "featured": false,
       "createdAt": "2025-05-01T00:00:00Z",
       "url": "https://github.com/mahes-reddy332/Zomathon",
-      "description": "Recommendation system project developed with data-driven modeling and ranking approaches.",
+      "description": "Data-driven recommendation engine evaluating collaborative filtering and content-based ranking algorithms to predict user food preferences with balanced relevance and recommendation diversity.",
       "languages": [
         {
           "name": "Python",
           "iconifyClass": "simple-icons:python"
-        }
-      ]
-    },
-    {
-      "id": "repo-newsapp",
-      "name": "Newsapp",
-      "createdAt": "2025-08-01T00:00:00Z",
-      "url": "https://github.com/mahes-reddy332/Newsapp",
-      "description": "JavaScript news application consuming real-time APIs with category filtering and clean UI.",
-      "languages": [
+        },
         {
-          "name": "JavaScript",
-          "iconifyClass": "simple-icons:javascript"
-        }
-      ]
-    },
-    {
-      "id": "repo-feeling-cnn",
-      "name": "FeelingDetectionUsingCNN",
-      "createdAt": "2025-01-01T00:00:00Z",
-      "url": "https://github.com/mahes-reddy332/FeelingDetectionUsingCNN",
-      "description": "Convolutional neural network project for emotion and sentiment style classification tasks.",
-      "languages": [
+          "name": "Scikit-learn",
+          "iconifyClass": "simple-icons:scikitlearn"
+        },
         {
-          "name": "Python",
-          "iconifyClass": "simple-icons:python"
+          "name": "Pandas",
+          "iconifyClass": "simple-icons:pandas"
         }
       ]
     },
     {
       "id": "repo-netflix-sql",
-      "name": "NetflixContentAnalysis",
+      "name": "Netflix Catalog Content Analytics",
+      "category": "Relational Databases · SQL Analytics",
+      "featured": false,
       "createdAt": "2025-09-01T00:00:00Z",
       "url": "https://github.com/mahes-reddy332/NetflixContentAnalysis",
-      "description": "SQL-based exploratory analysis of Netflix content trends, genres, ratings, and release patterns.",
+      "description": "Comprehensive exploratory SQL analysis of Netflix titles, examining release trends, country-specific catalogs, genre classifications, and creator distribution patterns using advanced window functions.",
       "languages": [
         {
           "name": "SQL",
           "iconifyClass": "simple-icons:mysql"
-        }
-      ]
-    },
-    {
-      "id": "repo-reaction-kinetics",
-      "name": "Reaction_Kinetics_Simulator",
-      "createdAt": "2025-03-01T00:00:00Z",
-      "url": "https://github.com/mahes-reddy332/Reaction_Kinetics_Simulator",
-      "description": "Simulation project for reaction kinetics and chemical engineering mini-project experimentation.",
-      "languages": [
+        },
         {
-          "name": "Python",
-          "iconifyClass": "simple-icons:python"
+          "name": "PostgreSQL",
+          "iconifyClass": "simple-icons:postgresql"
         }
       ]
     }

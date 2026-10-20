@@ -1,0 +1,143 @@
+\documentclass[letterpaper,10pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+
+\pagestyle{fancy}
+\fancyhf{}
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.5in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.5in}
+\addtolength{\textheight}{1.0in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+\begin{document}
+
+%----------HEADING----------
+\begin{center}
+    \textbf{\Huge \scshape Mahesh Reddy Mula} \\ \vspace{2pt}
+    \small +91 6301828916 $|$ \href{mailto:mahesreddymula@gmail.com}{\underline{mahesreddymula@gmail.com}} $|$ 
+    \href{https://github.com/mahes-reddy332}{\underline{GitHub}} $|$
+    \href{https://www.linkedin.com/in/mahesh-reddy-mula-369z/}{\underline{LinkedIn}} $|$
+    \href{https://mahes-reddy332.github.io/freelance-portfolio}{\underline{Portfolio}}
+\end{center}
+
+%-----------EDUCATION-----------
+\section{Education}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {National Institute of Technology, Raipur}{Expected May 2027}
+      {Bachelor of Technology in Chemical Engineering}{CGPA: 8.65 / 10.0}
+    \resumeSubheading
+      {Indian Institute of Technology, Madras}{Expected Mar 2028}
+      {Bachelor of Science in Data Science \& Applications}{CGPA: 7.50 / 10.0}
+  \resumeSubHeadingListEnd
+
+%-----------TECHNICAL SKILLS-----------
+\section{Technical Skills}
+ \begin{itemize}[leftmargin=0.15in, label={}]
+    \small{\item{
+     \textbf{Languages \& Core}{: Python, C++, SQL, JavaScript, HTML} \\
+     \textbf{Agentic AI \& LLM Systems}{: LangGraph, LangChain, RAG, Model Context Protocol (MCP), HITL Controls} \\
+     \textbf{Machine Learning \& Data Science}{: PyTorch, Scikit-learn, XGBoost, Optuna, Transformers, Deep Learning, NLP, CV} \\
+     \textbf{Tools \& Infrastructure}{: PostgreSQL, FastAPI, React, Docker, GCP, Git, PyTest, Vector DBs (ChromaDB)}
+    }}
+ \end{itemize}
+
+%-----------EXPERIENCE-----------
+\section{Experience}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {Research Intern}{May 2025 -- Jul 2025}
+      {Indian Institute of Technology Madras, Research Dept.}{Chennai, India}
+      \resumeItemListStart
+        \resumeItem{Developed automated Python data pipelines to clean, preprocess, and analyze multi-variable experimental sensor datasets, modeling non-linear fluid dynamics.}
+        \resumeItem{Engineered quantitative image analysis and statistical modeling workflows on microscopic imaging data to measure structural distributions and validate experimental variance.}
+      \resumeItemListEnd
+  \resumeSubHeadingListEnd
+
+%-----------PROJECTS-----------
+\section{Projects}
+    \resumeSubHeadingListStart
+      \resumeProjectHeading
+          {\textbf{Amazon ML Challenge: Multimodal Entity Extraction \& Pricing} $|$ \emph{ResNet, BERT, Boosting}}{Oct 2025}
+          \resumeItemListStart
+            \resumeItem{Built an end-to-end data pipeline to clean, validate, and predict structured product attributes and prices from 75,000+ noisy e-commerce records.}
+            \resumeItem{Engineered feature extractors using BERT Transformer embeddings and regex unit normalizers, fusing them with image embeddings into an aligned feature set.}
+            \resumeItem{Trained gradient-boosted ensembles (XGBoost) with Optuna tuning, achieving SMAPE 49.23 and ranking \textbf{819th out of 82,500+ teams (Top 1\%)}.}
+          \resumeItemListEnd
+      \resumeProjectHeading
+          {\textbf{OwnChatGpt: Full-Stack Agentic System \& Execution Engine} $|$ \emph{FastAPI, React, PostgreSQL, LLMs}}{Oct 2026}
+          \resumeItemListStart
+            \resumeItem{Engineered a full-stack AI assistant streaming responses in real time over SSE with a Python FastAPI backend and an autonomous LLM tool-calling agent.}
+            \resumeItem{Implemented semantic retrieval (RAG) using ChromaDB vector embeddings with source citations, and designed PostgreSQL schemas for session persistence.}
+            \resumeItem{Integrated Model Context Protocol (MCP) servers and sandboxed execution tools with server-side Human-in-the-Loop approvals and PyTest unit tests.}
+          \resumeItemListEnd
+      \resumeProjectHeading
+          {\textbf{Agentic Blog Studio: Multi-Agent Orchestration System} $|$ \emph{LangGraph, Python, AI Agents}}{Aug 2026}
+          \resumeItemListStart
+            \resumeItem{Architected a multi-agent workflow using LangGraph in Python, running asynchronous fan-out sub-agents for concurrent text generation.}
+            \resumeItem{Implemented deterministic 'critic-and-revise' feedback loops with semantic assertion checks against source references, rewriting hallucinations.}
+            \resumeItem{Integrated LangSmith telemetry tracing to benchmark execution latency, monitor token usage, and inspect state transitions.}
+          \resumeItemListEnd
+    \resumeSubHeadingListEnd
+
+%-----------COMPETITIONS & INDUSTRY SELECTIONS-----------
+\section{Competitions \& Industry Selections}
+ \begin{itemize}[leftmargin=0.15in, label={--}]
+    \small{
+      \item \textbf{Tata Elxsi TellPORT (Season 3):} Earned \textbf{Pre-Placement Offer (PPO)} in 3rd year B.Tech out of 47,000+ teams for edge telematics and predictive maintenance systems design. \hfill \emph{Feb 2026}
+      \item \textbf{Nestl\'e--Novartis NEST 2.0:} Selected as \textbf{National Semifinalist} out of 33,300+ teams for architecting an automated clinical trial data quality and site compliance platform. \hfill \emph{Jan 2025}
+      \item \textbf{Walmart Sparkplug Summer Internship 2026:} Cleared technical selection rounds and was \textbf{Shortlisted for Technical Interview}. \hfill \emph{2026}
+      \item \textbf{Razorpay AI Buildathon 2026:} Engineered \emph{MuleHunter}, a graph-based transaction flow tracer identifying multi-hop mule account topologies with BFS scoring. \hfill \emph{2026}
+      \item \textbf{Amazon ML Challenge 2025:} Placed in \textbf{Top 1\% (Ranked 819th / 82,500+ Teams)} for multimodal price prediction combining deep visual and NLP embeddings. \hfill \emph{Oct 2025}
+      \item \textbf{Varroc Eureka Challenge 3.0:} Earned \textbf{Pre-Placement Interview (PPI)} for automotive component technology innovation. \hfill \emph{2025}
+      \item \textbf{Bloom Energy Be Hackfest:} Earned \textbf{Pre-Placement Interview (PPI)} in clean energy challenge tracks for applied engineering systems design. \hfill \emph{2025}
+      \item \textbf{The Economic Times ET Gen AI Hackathon:} Earned \textbf{Pre-Placement Interview (PPI)} for generative AI application architecture. \hfill \emph{2025}
+      \item \textbf{Stanford Online \& DeepLearning.AI:} Certified in Advanced Learning Algorithms, instructed by Andrew Ng. \hfill \emph{Feb 2025}
+    }
+ \end{itemize}
+
+%-----------POSITIONS OF RESPONSIBILITY-----------
+\section{Positions of Responsibility}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {Web Operations Head}{Jun 2024 -- Feb 2025}
+      {Bandipur House, IIT Madras BS}{}
+      \resumeItemListStart
+        \resumeItem{Maintained digital operations, writing SQL queries and managing election data tracking pipelines for 1,000+ student users.}
+      \resumeItemListEnd
+    \resumeSubheading
+      {Tech Executive}{Mar 2023 -- Sep 2025}
+      {Entrepreneurship Cell, NIT Raipur}{}
+      \resumeItemListStart
+        \resumeItem{Handled analytics tracking and database records for entrepreneurship events, generating automated attendance and engagement reports.}
+      \resumeItemListEnd
+  \resumeSubHeadingListEnd
+
+\end{document}

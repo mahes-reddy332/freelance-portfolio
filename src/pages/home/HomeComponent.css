@@ -1,0 +1,74 @@
+.home-section {
+  width: 90%;
+  margin: 70px auto 40px auto;
+}
+
+.home-section-header {
+  margin-bottom: 28px;
+  text-align: left;
+}
+
+.home-section-title {
+  font-family: "Google Sans Bold", "Google Sans", sans-serif;
+  font-size: 36px;
+  font-weight: 700;
+  line-height: 1.25;
+  margin: 0 0 10px 0;
+}
+
+.home-section-subtitle {
+  font-family: "Google Sans Regular", sans-serif;
+  font-size: 17px;
+  margin: 0;
+  line-height: 1.5;
+}
+
+.home-featured-cards-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.75rem;
+  margin-bottom: 1.5rem;
+}
+
+.home-section-btn-div {
+  display: flex;
+  justify-content: center;
+  margin-top: 36px;
+}
+
+.home-contact-card {
+  padding: 50px 30px;
+  border-radius: 12px;
+  text-align: center;
+  border: 1px solid rgba(0, 28, 85, 0.12);
+  margin-top: 20px;
+}
+
+@media (max-width: 1024px) {
+  .home-featured-cards-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 768px) {
+  .home-section {
+    width: 92%;
+    margin: 45px auto 25px auto;
+  }
+
+  .home-section-title {
+    font-size: 28px;
+  }
+
+  .home-section-subtitle {
+    font-size: 15px;
+  }
+
+  .home-featured-cards-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .home-contact-card {
+    padding: 30px 15px;
+  }
+}

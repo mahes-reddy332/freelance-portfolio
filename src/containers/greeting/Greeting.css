@@ -30,22 +30,46 @@
   margin-top: 20px;
 }
 
+.availability-wrapper {
+  margin-top: 40px;
+  margin-bottom: 15px;
+}
+
+.availability-badge {
+  display: inline-flex;
+  align-items: center;
+  font-size: 14px;
+  font-weight: 600;
+  padding: 6px 16px;
+  border-radius: 20px;
+  letter-spacing: 0.2px;
+}
+
+.availability-dot {
+  width: 9px;
+  height: 9px;
+  border-radius: 50%;
+  margin-right: 8px;
+  display: inline-block;
+  box-shadow: 0 0 0 2px rgba(16, 185, 129, 0.25);
+}
+
 .greeting-text {
-  margin-top: 80px;
-  font-size: 70px;
-  line-height: 1.1;
+  margin-top: 10px;
+  font-size: 46px;
+  line-height: 1.2;
   font-family: "Google Sans Bold";
 }
 
 .greeting-nickname {
-  font-size: 30px;
-  line-height: 0px;
+  font-size: 26px;
+  line-height: normal;
   font-family: "Google Sans Bold Italic";
 }
 
 .greeting-text-p {
-  font-size: 40px;
-  line-height: 40px;
+  font-size: 19px;
+  line-height: 30px;
   margin-right: 40px;
   font-family: "Google Sans Medium";
 }
@@ -58,29 +82,34 @@
 /* Media Query */
 @media (max-width: 1380px) {
   .greeting-text {
-    font-size: 50px;
+    font-size: 38px;
   }
   .greeting-text-p {
-    font-size: 20px;
+    font-size: 18px;
+    line-height: 28px;
   }
 }
 @media (max-width: 768px) {
   .button-greeting-div {
     justify-content: space-around;
   }
-  .greeting-text {
-    font-size: 30px;
+  .availability-wrapper {
     margin-top: 0px;
     text-align: center;
   }
+  .greeting-text {
+    font-size: 28px;
+    margin-top: 10px;
+    text-align: center;
+  }
   .greeting-nickname {
-    font-size: 25px;
+    font-size: 20px;
     text-align: center;
   }
   .greeting-text-p {
     font-size: 16px;
     margin-right: 0px;
-    line-height: normal;
+    line-height: 24px;
     text-align: center;
   }
   .greeting-main {

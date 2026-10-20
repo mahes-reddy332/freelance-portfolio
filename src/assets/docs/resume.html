@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Mahesh Reddy Mula - Resume</title>
+<style>
+  @page {
+    size: letter;
+    margin: 0.42in 0.48in;
+  }
+  * {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+  body {
+    font-family: "Times New Roman", Times, "Latin Modern Roman", serif;
+    font-size: 8.8pt;
+    line-height: 1.25;
+    color: #111111;
+    background: #ffffff;
+  }
+  a {
+    color: #0b3c5d;
+    text-decoration: none;
+  }
+  a:hover {
+    text-decoration: underline;
+  }
+  
+  /* Header */
+  .header {
+    text-align: center;
+    margin-bottom: 7px;
+  }
+  .name {
+    font-size: 19pt;
+    font-weight: 700;
+    letter-spacing: 0.5px;
+    text-transform: uppercase;
+    margin-bottom: 3px;
+  }
+  .contact-info {
+    font-size: 8.6pt;
+    color: #333333;
+  }
+  .contact-info span {
+    margin: 0 4px;
+    color: #777777;
+  }
+
+  /* Section Styling */
+  .section {
+    margin-bottom: 6px;
+  }
+  .section-title {
+    font-size: 9.8pt;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.6px;
+    border-bottom: 0.75pt solid #222222;
+    padding-bottom: 1px;
+    margin-bottom: 3px;
+  }
+
+  /* Item Layout */
+  .item {
+    margin-bottom: 3px;
+  }
+  .item-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+  }
+  .item-title {
+    font-weight: 700;
+    font-size: 8.9pt;
+  }
+  .item-subtitle {
+    font-style: italic;
+    font-size: 8.6pt;
+  }
+  .item-right {
+    text-align: right;
+    font-size: 8.6pt;
+    white-space: nowrap;
+  }
+  .item-right-bold {
+    font-weight: 700;
+  }
+  .tech-stack {
+    font-weight: 400;
+    font-style: italic;
+    color: #333333;
+  }
+
+  /* Bullets */
+  ul.bullets {
+    list-style-type: none;
+    margin-top: 1px;
+    padding-left: 0;
+  }
+  ul.bullets li {
+    position: relative;
+    padding-left: 11px;
+    margin-bottom: 1.5px;
+    text-align: justify;
+    font-size: 8.5pt;
+    line-height: 1.22;
+  }
+  ul.bullets li::before {
+    content: "–";
+    position: absolute;
+    left: 0;
+    color: #333333;
+  }
+
+  /* Skills grid */
+  .skills-list {
+    font-size: 8.5pt;
+    line-height: 1.28;
+  }
+  .skill-row {
+    margin-bottom: 1.5px;
+  }
+  .skill-label {
+    font-weight: 700;
+    color: #111111;
+  }
+
+  /* Competitions compact list */
+  .competitions-list {
+    list-style-type: none;
+    padding-left: 0;
+  }
+  .competitions-list li {
+    position: relative;
+    padding-left: 11px;
+    margin-bottom: 1.5px;
+    font-size: 8.35pt;
+    line-height: 1.2;
+  }
+  .competitions-list li::before {
+    content: "–";
+    position: absolute;
+    left: 0;
+    color: #333333;
+  }
+  .comp-company {
+    font-weight: 700;
+  }
+  .comp-outcome {
+    font-weight: 600;
+    color: #0b3c5d;
+  }
+  .comp-date {
+    float: right;
+    color: #444444;
+    font-size: 8pt;
+  }
+</style>
+</head>
+<body>
+
+  <!-- HEADER -->
+  <div class="header">
+    <h1 class="name">Mahesh Reddy Mula</h1>
+    <div class="contact-info">
+      <a href="tel:+916301828916">+91 6301828916</a>
+      <span>|</span>
+      <a href="mailto:mahesreddymula@gmail.com">mahesreddymula@gmail.com</a>
+      <span>|</span>
+      <a href="https://github.com/mahes-reddy332">GitHub</a>
+      <span>|</span>
+      <a href="https://www.linkedin.com/in/mahesh-reddy-mula-369z/">LinkedIn</a>
+      <span>|</span>
+      <a href="https://mahes-reddy332.github.io/freelance-portfolio">Portfolio</a>
+    </div>
+  </div>
+
+  <!-- EDUCATION -->
+  <div class="section">
+    <div class="section-title">Education</div>
+    <div class="item">
+      <div class="item-header">
+        <span class="item-title">National Institute of Technology, Raipur</span>
+        <span class="item-right item-right-bold">CGPA: 8.65 / 10.0</span>
+      </div>
+      <div class="item-header">
+        <span class="item-subtitle">Bachelor of Technology in Chemical Engineering</span>
+        <span class="item-right">Expected May 2027</span>
+      </div>
+    </div>
+    <div class="item" style="margin-top: 2px;">
+      <div class="item-header">
+        <span class="item-title">Indian Institute of Technology, Madras</span>
+        <span class="item-right item-right-bold">CGPA: 7.50 / 10.0</span>
+      </div>
+      <div class="item-header">
+        <span class="item-subtitle">Bachelor of Science in Data Science & Applications</span>
+        <span class="item-right">Expected Mar 2028</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- TECHNICAL SKILLS -->
+  <div class="section">
+    <div class="section-title">Technical Skills</div>
+    <div class="skills-list">
+      <div class="skill-row"><span class="skill-label">Languages & Core:</span> Python, C++, SQL, JavaScript, HTML</div>
+      <div class="skill-row"><span class="skill-label">Agentic AI & LLM Systems:</span> LangGraph, LangChain, RAG, Model Context Protocol (MCP), HITL Controls</div>
+      <div class="skill-row"><span class="skill-label">Machine Learning & Data Science:</span> PyTorch, Scikit-learn, XGBoost, Optuna, Transformers, Deep Learning, NLP, Computer Vision</div>
+      <div class="skill-row"><span class="skill-label">Tools, Databases & Infrastructure:</span> PostgreSQL, FastAPI, React, Docker, GCP, Git, PyTest, Vector DBs (ChromaDB)</div>
+    </div>
+  </div>
+
+  <!-- EXPERIENCE -->
+  <div class="section">
+    <div class="section-title">Experience</div>
+    <div class="item">
+      <div class="item-header">
+        <span class="item-title">Research Intern</span>
+        <span class="item-right">May 2025 – Jul 2025</span>
+      </div>
+      <div class="item-header">
+        <span class="item-subtitle">Indian Institute of Technology Madras, Research Dept.</span>
+        <span class="item-right">Chennai, India</span>
+      </div>
+      <ul class="bullets">
+        <li>Developed automated Python data pipelines to clean, preprocess, and analyze multi-variable experimental sensor datasets, modeling non-linear fluid dynamics.</li>
+        <li>Engineered quantitative image analysis and statistical modeling workflows on high-resolution microscopic imaging data to measure structural distributions and validate experimental variance.</li>
+      </ul>
+    </div>
+  </div>
+
+  <!-- PROJECTS -->
+  <div class="section">
+    <div class="section-title">Projects</div>
+    
+    <div class="item">
+      <div class="item-header">
+        <span><strong class="item-title">Amazon ML Challenge: Multimodal Entity Extraction & Pricing</strong> <span class="tech-stack">| ResNet, BERT, Boosting</span></span>
+        <span class="item-right">Oct 2025</span>
+      </div>
+      <ul class="bullets">
+        <li>Built an end-to-end data pipeline to clean, validate, and predict structured product attributes and prices from 75,000+ noisy e-commerce records.</li>
+        <li>Engineered feature extractors using BERT Transformer embeddings and regex unit normalizers (weight, volume, dimensions) to standardize catalog metadata, fusing them with image embeddings into an aligned feature set.</li>
+        <li>Trained gradient-boosted ensembles (XGBoost) with stratified k-fold cross-validation and Optuna tuning, achieving SMAPE 49.23 and ranking <strong>819th out of 82,500+ teams (Top 1%)</strong> under strict compute constraints.</li>
+      </ul>
+    </div>
+
+    <div class="item">
+      <div class="item-header">
+        <span><strong class="item-title">OwnChatGpt: Full-Stack Agentic System & Execution Engine</strong> <span class="tech-stack">| FastAPI, React, PostgreSQL, LLMs</span></span>
+        <span class="item-right">Oct 2026</span>
+      </div>
+      <ul class="bullets">
+        <li>Engineered a full-stack AI assistant with a React interface streaming real-time responses over Server-Sent Events (SSE) and a Python FastAPI backend with an LLM agent automating multi-step tool use.</li>
+        <li>Implemented semantic document retrieval (RAG) using ChromaDB vector embeddings with source citations, and designed PostgreSQL schemas with indexing and migrations for secure session persistence.</li>
+        <li>Integrated Model Context Protocol (MCP) servers and sandboxed shell/code tools, enforcing server-side Human-in-the-Loop approval for sensitive actions, validated with PyTest unit tests.</li>
+      </ul>
+    </div>
+
+    <div class="item">
+      <div class="item-header">
+        <span><strong class="item-title">Agentic Blog Studio: Multi-Agent Orchestration System</strong> <span class="tech-stack">| LangGraph, Python, AI Agents</span></span>
+        <span class="item-right">Aug 2026</span>
+      </div>
+      <ul class="bullets">
+        <li>Architected a multi-agent workflow using LangGraph in Python, running asynchronous fan-out sub-agents (Planner, Writer, Fact-Checker) for concurrent text generation.</li>
+        <li>Implemented deterministic 'critic-and-revise' feedback loops with semantic assertion checks against source references, automatically identifying and rewriting hallucinations.</li>
+        <li>Integrated LangSmith telemetry tracing to benchmark execution latency, monitor token usage, and inspect state transitions across agent graphs.</li>
+      </ul>
+    </div>
+  </div>
+
+  <!-- COMPETITIONS & INDUSTRY SELECTIONS -->
+  <div class="section">
+    <div class="section-title">Competitions & Industry Selections</div>
+    <ul class="competitions-list">
+      <li><span class="comp-company">Tata Elxsi TellPORT (Season 3):</span> Earned <span class="comp-outcome">Pre-Placement Offer (PPO)</span> in 3rd year B.Tech out of 47,000+ teams for edge telematics and predictive maintenance systems design. <span class="comp-date">Feb 2026</span></li>
+      <li><span class="comp-company">Nestlé–Novartis NEST 2.0:</span> Selected as <span class="comp-outcome">National Semifinalist</span> out of 33,300+ teams for architecting an automated clinical trial data quality and site compliance platform. <span class="comp-date">Jan 2025</span></li>
+      <li><span class="comp-company">Walmart Sparkplug Summer Internship 2026:</span> Cleared competitive technical selection rounds and was <span class="comp-outcome">Shortlisted for Technical Interview</span>. <span class="comp-date">2026</span></li>
+      <li><span class="comp-company">Razorpay AI Buildathon 2026:</span> Engineered <em>MuleHunter</em>, a graph-based transaction flow tracer identifying multi-hop mule account topologies with BFS scoring. <span class="comp-date">2026</span></li>
+      <li><span class="comp-company">Amazon ML Challenge 2025:</span> Placed in <span class="comp-outcome">Top 1% (Ranked 819th / 82,500+ Teams)</span> for multimodal price prediction combining deep visual and NLP embeddings. <span class="comp-date">Oct 2025</span></li>
+      <li><span class="comp-company">Varroc Eureka Challenge 3.0:</span> Earned <span class="comp-outcome">Pre-Placement Interview (PPI)</span> for automotive component technology innovation. <span class="comp-date">2025</span></li>
+      <li><span class="comp-company">Bloom Energy Be Hackfest:</span> Earned <span class="comp-outcome">Pre-Placement Interview (PPI)</span> in clean energy challenge tracks for applied engineering systems design. <span class="comp-date">2025</span></li>
+      <li><span class="comp-company">The Economic Times ET Gen AI Hackathon:</span> Earned <span class="comp-outcome">Pre-Placement Interview (PPI)</span> for generative AI application architecture. <span class="comp-date">2025</span></li>
+      <li><span class="comp-company">Stanford Online & DeepLearning.AI:</span> Certified in Advanced Learning Algorithms, instructed by Andrew Ng. <span class="comp-date">Feb 2025</span></li>
+    </ul>
+  </div>
+
+  <!-- POSITIONS OF RESPONSIBILITY -->
+  <div class="section">
+    <div class="section-title">Positions of Responsibility</div>
+    <div class="item">
+      <div class="item-header">
+        <span><strong class="item-title">Web Operations Head</strong> | <span class="item-subtitle">Bandipur House, IIT Madras BS</span></span>
+        <span class="item-right">Jun 2024 – Feb 2025</span>
+      </div>
+      <ul class="bullets">
+        <li>Maintained digital operations, writing SQL queries and managing election data tracking pipelines for 1,000+ student users.</li>
+      </ul>
+    </div>
+    <div class="item" style="margin-top: 1.5px;">
+      <div class="item-header">
+        <span><strong class="item-title">Tech Executive</strong> | <span class="item-subtitle">Entrepreneurship Cell, NIT Raipur</span></span>
+        <span class="item-right">Mar 2023 – Sep 2025</span>
+      </div>
+      <ul class="bullets">
+        <li>Handled analytics tracking and database records for entrepreneurship events, generating automated attendance and engagement reports.</li>
+      </ul>
+    </div>
+  </div>
+
+</body>
+</html>
