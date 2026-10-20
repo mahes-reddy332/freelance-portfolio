@@ -34,15 +34,15 @@ export default class Main extends Component {
       ? new URL(process.env.PUBLIC_URL, window.location.origin).pathname.replace(
           /\/$/,
           ""
-        ) || "/"
-      : "/";
+        )
+      : "";
 
     const theme = this.props.theme;
     const toggleTheme = this.props.toggleTheme;
     const themeMode = this.props.themeMode;
 
     return (
-      <BrowserRouter basename={routerBaseName}>
+      <BrowserRouter basename={routerBaseName || undefined}>
         <Switch>
           <Route
             path="/"

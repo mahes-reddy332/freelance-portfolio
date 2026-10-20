@@ -2,7 +2,6 @@
   "private": true,
   "name": "freelance-portfolio",
   "version": "1.0.0",
-  "homepage": "https://mahes-reddy332.github.io/freelance-portfolio",
   "scripts": {
     "build": "react-scripts --openssl-legacy-provider build",
     "predeploy": "npm run build",
